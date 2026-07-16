@@ -1,25 +1,22 @@
-## Final Trading Decision: BTC-USD
-
-**Rating: Underweight**  
-**Action: Sell 25% of spot position at $66,500**  
+**Final Trading Decision: BTC-USD**  
+**Rating: Hold**  
 
 **Rationale:**  
-The debate confirms a clear asymmetry: structural headwinds dominate the medium-term outlook, but a tactical bounce with genuine momentum signals warrants caution against a full exit. The trader’s proposal—reduce 20–30% on strength—is the optimal compromise, locking in gains from the $58K bounce while preserving upside exposure if the rally extends to $70K.
+The debate confirms a genuinely balanced risk profile. The aggressive analyst correctly highlights real technical improvement: RSI recovery from 15.4 to 56.2, MACD crossover with a +468 accelerating histogram, a Mayer Multiple at 0.87 (historically an accumulation zone), and the collapse in dip-to-$55K probability from 69% to 48%. These signals indicate the market is pricing out tail risk and that selling exhaustion may be setting a floor.  
 
-Key evidence supporting this decision:
+However, the conservative analyst’s counterpoints are equally compelling and directly supported by the data:  
+- **Volume divergence:** The $30B bounce volume is less than half the $71B capitulation volume. As the conservative and neutral analysts both note, this suggests a relief rally, not conviction-driven accumulation.  
+- **200 SMA gravity well:** The 200 SMA at $73,629 is 11.8% above price and declining ~$115/day. The death cross context remains unhealed.  
+- **Hostile macro:** 82% probability of zero Fed cuts, 10-year yield at 4.58% and rising—a real opportunity cost for a zero-yield asset.  
+- **Negative risk-reward on the bull’s own framework:** 3% upside to target vs. 4.5% downside to stop. This is not asymmetric upside.  
 
-1. **Technical Ceiling** – The 200-day SMA at $73,629 (12.6% above current price) is declining and has capped every recovery attempt since May. The bounce volume ($29.8B) is less than half the panic-low volume ($71.5B), confirming distribution rather than accumulation.
+The neutral analyst correctly synthesizes that the data set is mixed—neither side delivers a knockout punch. The retail narrative (clarity act, X Money) is low-confidence noise without institutional confirmation (zero Yahoo Finance or BlackRock/Fidelity headlines).  
 
-2. **Macro Gravity** – 82% probability of zero Fed cuts, M2 contraction, real yields at 1.8%, and global tightening (BoE hike odds up 19pp) create a hostile environment for liquidity-sensitive assets like Bitcoin. The neutral analyst correctly notes these headwinds are intensifying, not static.
+The prior lesson from the 2026-07-14 underweight decision is instructive: momentum signals should be weighted higher when they convincingly break key moving averages. Today, price has reclaimed the 50 SMA but remains 11.8% below the 200 SMA on weak volume. The improvement is real but early and fragile. A Hold balances the genuine technical tailwind against the unresolved macro and volume headwinds, avoiding both the aggressive overtrade and the premature sell that burned us previously.  
 
-3. **Partial De-Risk** – A 25% reduction balances the bear’s structural case against the bull’s short-term momentum (MACD crossover, RSI recovery to 56, 50‑day SMA reclaim). Holding 75% allows participation in a potential run to $70K while the stop-loss protects against a 48% probability of a $55K retest (down from 70% last week, but still a coin flip).
-
-**Execution Plan (from trader’s proposal, slightly modified):**
-
-- **Sell 25% of spot** at $66,500 (limit order in the $65K–$68K zone).  
-- **Set a trailing stop-loss** on the remaining 75% at 1.5× ATR (~$3,000) below the 10‑day EMA (currently ~$63,333). If the 10‑day EMA breaks, close the remaining long immediately.  
-- **Monitor the 200‑day SMA slope.** If it begins to flatten or the price reclaims it on strong volume, reassess for a potential trend shift. Until then, prioritize capital preservation.  
-- **Do not initiate new longs** at current levels. Wait for a flush to $55K–$58K for better risk/reward.
-
-**Final Position Sizing:**  
-Hold 75% of original BTC-USD spot allocation with the trailing stop above. This keeps a core position alive for a surprise rally while respecting the overwhelming structural headwinds. The 25% sold crystallizes gains from the bounce and reduces exposure to the 22% tail risk of a $45K dip.
+**Execution:**  
+- Maintain existing BTC-USD positions at current size. No new exposure. No selling into the bounce.  
+- If price reclaims and holds above the 200 SMA ($73,629) with daily volume above $50B, reconsider upgrading to Overweight.  
+- If price loses the 50 SMA (~$64,335) on increasing volume, reduce exposure by 25–30% to protect against the bear’s dead-cat-bounce scenario.  
+- Monitor the 10-year yield: a sustained move below 4.30% would weaken the macro headwind and warrant a reassessment toward Overweight.  
+- No new options or leveraged positions. Risk-reward is symmetric, not asymmetric, at current levels.

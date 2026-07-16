@@ -376,7 +376,8 @@ details = [
     ('Close Price:', '$64,956.11'),
     ('Framework:', 'TradingAgents v0.3.1 (Multi-Agent LLM)'),
     ('LLM Provider:', 'DeepSeek V4 Flash'),
-    ('Data Sources:', 'Yahoo Finance, Polymarket, Reddit'),
+    ('Data Sources:', 'Yahoo Finance, FRED, Polymarket, Reddit'),
+    ('Macro Data:', 'Fed 3.63%, CPI -0.42%, 10Y 4.58%'),
 ]
 for k, v in details:
     pdf.set_font('Helvetica', 'B', 10)
@@ -400,10 +401,12 @@ pdf.cell(0, 5, 'github.com/TauricResearch/TradingAgents', align='C')
 pdf.add_page()
 pdf.section_title('Executive Summary')
 
-exec_summary = """Bitcoin (BTC-USD) closed at $64,956.11 on July 14, 2026, emerging from a significant 
-June sell-off with early-stage momentum reversal signals. While long-term structure remains bearish 
-(price below a declining 200-day SMA), short- and medium-term signals have turned decisively bullish 
-— confirmed by a MACD crossover and RSI recovery from deeply oversold levels (15 to 56)."""
+exec_summary = sanitize("""Bitcoin (BTC-USD) closed at $64,956.11 on July 14, 2026, at a critical inflection point
+after a 13-month decline from $126K+ to a June low near $58K. Multiple technical indicators are
+flashing early-stage bullish reversal signals (MACD crossover, RSI recovery from 15 to 56), while
+the macro landscape remains mixed: the Fed holds at 3.63% with 82% probability of no cuts in 2026,
+but CPI disinflation (-0.42% MoM) and stable unemployment (4.2%) create a nuanced backdrop. The
+portfolio manager rated the asset a Hold -- maintaining positions without adding or reducing exposure.""")
 
 pdf.body_text(exec_summary)
 pdf.ln(3)
@@ -413,9 +416,10 @@ metrics = [
     ('Close Price:', '$64,956.11', '52-Week High:', '$126,198.07'),
     ('52-Week Low:', '$57,747.77', 'Market Cap:', '~$1.296 Trillion'),
     ('10 EMA:', '$63,332.57', '200 SMA:', '$73,628.77'),
-    ('RSI (14):', '56.20', 'ATR (14):', '$2,019.39'),
-    ('MACD:', '-81.38 (rising)', 'MACD Histogram:', '+468.06 (expanding)'),
-    ('Bollinger Upper:', '$65,840.82', 'Bollinger Lower:', '$58,179.48'),
+    ('RSI (14):', '56.20', 'MACD Histogram:', '+468.06 (rising)'),
+    ('Fed Funds:', '3.63%', '10Y Treasury:', '4.58%'),
+    ('CPI MoM:', '-0.42% (disinflation)', 'Unemployment:', '4.2%'),
+    ('Polymarket:', '82% no rate cuts', 'Recession Prob:', '10%'),
 ]
 for r1, r2, r3, r4 in metrics:
     pdf.set_font('Helvetica', 'B', 8.5)
@@ -465,8 +469,8 @@ pdf.sub_title('Sentiment Analyst')
 sentiment_body = """Overall Sentiment: Mildly Bullish (Score: 5.8/10) - Low Confidence. No Yahoo Finance articles found for BTC-USD in the past 7 days. Two Reddit r/wallstreetbets posts expressed leveraged long convictions through IBIT call options (Dec 2028 expiry) and a pseudo-quantitative 70% probability estimate for continued upside. However, the data deficiency is severe: no news, no StockTwits (HTTPError), and no engagement metrics. This signal should be treated as very low-convidence, narrow-scope retail speculation."""
 pdf.body_text(sentiment_body)
 
-pdf.sub_title('News Analyst')
-news_body = """Macro data via FRED was unavailable (no API key configured - free at fred.stlouisfed.org). Polymarket prediction markets showed: 82% probability of zero Fed cuts through 2026, M2 contraction, real yields at 1.8%, and global tightening (BoE hike odds up 19pp). Bitcoin-specific prediction markets indicated a 48% probability of a $55K retest (down from 70% the prior week), and a 22% tail risk of a $45K dip. The macro environment is hostile for liquidity-sensitive assets like Bitcoin."""
+pdf.sub_title('News Analyst - With FRED Macro Data')
+news_body = sanitize("""Macro data from FRED (free API key now configured) provided rich context. The Fed Funds Rate sits at 3.63% (unchanged), with prediction markets pricing 82% probability of NO rate cuts in 2026. The 10-Year Treasury Yield closed at 4.58%, trending up from 4.48% a week earlier. CPI showed a disinflationary -0.42% month-over-month decline, while Core PCE (130.082) remained flat. Unemployment fell to 4.2% and Real GDP held at $24,180.4B (Q1 2026). The macro environment remains a headwind for liquidity-sensitive assets like Bitcoin.""")
 pdf.body_text(news_body)
 
 pdf.sub_title('Fundamentals Analyst')
@@ -501,34 +505,34 @@ weakness."""
 pdf.body_text(bear_text)
 
 pdf.sub_title('Judge Ruling')
-judge_text = """Recommendation: Underweight. After weighing both sides, the bear's structural and macro 
-arguments carry more weight for the medium-term outlook, even though the bull makes a legitimate 
-short-term technical case. The bull's strongest points (genuine momentum shift, MACD crossover, 
-collapsing dip probabilities) are real, but they are tactical signals in a structurally bearish 
-environment. The judge favors a partial de-risk over a full exit."""
+judge_text = sanitize("""Recommendation: Hold. This debate was genuinely balanced, with neither side delivering a 
+knockout punch. The bull's strongest points are the RSI recovery from 15.4 to 56.2, the MACD crossover 
+with a +468 histogram, the disinflationary CPI (-0.42% MoM) from FRED data, and the Mayer Multiple at 
+0.87 (historically an accumulation zone). The bear counters with the volume divergence ($30B bounce vs 
+$71B capitulation), the 200 SMA gravity well at $73,629, and the macro headwind of 82% no-cut 
+probability. The judge held that the evidence supports maintaining current positions without adding 
+new exposure. Neither selling into the bounce nor aggressive buying is warranted.""")
 pdf.body_text(judge_text)
 
 # ---- FINAL VERDICT ----
 pdf.add_page()
 pdf.section_title('Final Decision & Execution Plan')
 
-verdict_text = """Rating: Underweight
-Action: Sell 25% of spot position at $66,500
+verdict_text = sanitize("""Rating: Hold
+Action: Maintain existing positions at current size. No new exposure. No selling into the bounce.
 
-The debate confirms a clear asymmetry: structural headwinds dominate the medium-term outlook, but a tactical bounce with genuine momentum signals warrants caution against a full exit. The trader's proposal — reduce 20-30% on strength — is the optimal compromise, locking in gains from the $58K bounce while preserving upside exposure if the rally extends to $70K.
+The debate confirms a genuinely balanced risk profile. The aggressive analyst highlighted real technical improvement: RSI recovery from 15.4 to 56.2, MACD crossover with a +468 histogram, a Mayer Multiple at 0.87 (historically an accumulation zone), and the collapse in dip-to-$55K probability from 69% to 48%.
 
-Key Evidence:
-1. Technical Ceiling — The 200-day SMA at $73,629 (12.6% above current price) is declining and has capped every recovery attempt since May. The bounce volume ($29.8B) is less than half the panic-low volume ($71.5B), confirming distribution rather than accumulation.
+The conservative analyst correctly countered with the volume divergence ($30B bounce against $71B capitulation), the declining 200 SMA at $73,629 (11.8% above price), and the macro headwind of 82% probability of zero Fed cuts with the 10-year yield at 4.58%.
 
-2. Macro Gravity — 82% probability of zero Fed cuts, M2 contraction, real yields at 1.8%, and global tightening create a hostile environment for liquidity-sensitive assets like Bitcoin.
-
-3. Partial De-Risk — A 25% reduction balances the bear's structural case against the bull's short-term momentum. Holding 75% allows participation in a potential run to $70K while a trailing stop-loss protects against downside.
+The neutral analyst synthesized both sides: the technical improvement is genuine but incomplete; the macro backdrop is mixed with disinflationary CPI (-0.42% MoM) but no cuts expected.
 
 Execution Plan:
-• Sell 25% of spot at $66,500 (limit order in the $65K-$68K zone)
-• Set a trailing stop-loss on remaining 75% at 1.5x ATR (~$3,000) below the 10-day EMA (~$63,333)
-• Monitor the 200-day SMA slope — if it flattens or price reclaims it on strong volume, reassess
-• Do not initiate new longs at current levels — wait for a flush to $55K-$58K for better risk/reward"""
+1. Maintain current BTC-USD spot allocation at current size
+2. If price reclaims 200 SMA ($73,629) on >$50B daily volume, reconsider Overweight
+3. If price loses 50 SMA support (~$64,335) on increasing volume, reduce exposure by 25-30%
+4. Monitor the 10-year yield: a sustained move below 4.30% weakens the bear's macro case
+5. No new options or leveraged positions at current levels""")
 
 pdf.verdict_box(verdict_text)
 
