@@ -238,6 +238,18 @@ footer .copy{color:var(--text3);font-size:.8rem}
 }
 
 /* ========== SUCCESS MODAL ========== */
+.alert-strip{
+  display:flex;align-items:flex-start;gap:14px;
+  background:linear-gradient(135deg,rgba(239,68,68,.12),rgba(245,158,11,.06));
+  border:1px solid rgba(239,68,68,.5);border-radius:var(--radius);
+  padding:16px 20px;margin:0 auto;max-width:780px;
+}
+.alert-strip .alert-ico{font-size:1.4rem;line-height:1.4}
+.alert-strip h4{font-size:.95rem;margin-bottom:4px;color:#fca5a5;letter-spacing:.3px}
+.alert-strip p{font-size:.85rem;color:var(--text2);line-height:1.55}
+.alert-strip p a{color:#7dd3fc;font-weight:600}
+
+/* ========== SUCCESS MODAL ========== */
 .success-overlay{
   position:fixed;inset:0;z-index:200;
   background:rgba(0,0,0,.6);display:none;
@@ -286,6 +298,19 @@ footer .copy{color:var(--text3);font-size:.8rem}
       <div class="trust-item"><span>🤖</span><strong>6</strong> AI Agents per Run</div>
       <div class="trust-item"><span>📅</span><strong>Every</strong> Sunday 9 AM PT</div>
       <div class="trust-item"><span>🔗</span><strong>Full</strong> Archive on GitHub</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SECURITY ADVISORY ========== -->
+<section style="padding:0 0 48px">
+  <div class="container">
+    <div class="alert-strip">
+      <div class="alert-ico">🚨</div>
+      <div>
+        <h4>⚠ COLD WALLET SECURITY ADVISORY — ACTIVE EXPLOITATION</h4>
+        <p>On July 30, 2026, ~594 BTC (~$38M) was drained from 500 wallets whose seeds were generated on <strong>ColdCard hardware wallets running firmware from March 2021 onward</strong> — a seed-entropy bug that silently weakened every generated key. If you hold a Coldcard-generated seed, treat it as at risk. Full breakdown &amp; step-by-step remediation: <a href="https://nwfella.github.io/coldcard-entropy-incident/" target="_blank">ColdCard Entropy Incident — the $38M RNG failure →</a></p>
+      </div>
     </div>
   </div>
 </section>
@@ -588,6 +613,7 @@ footer .copy{color:var(--text3);font-size:.8rem}
       <a href="https://github.com/nwfella/satoshi-salmon-report" target="_blank">GitHub</a>
       <a href="https://github.com/nwfella/satoshi-salmon-report/tree/main/archive" target="_blank">Archive</a>
       <a href="https://github.com/nwfella/satoshi-salmon-report/" target="_blank">Report Issues</a>
+      <a href="https://nwfella.github.io/coldcard-entropy-incident/" target="_blank">⚠ ColdCard Advisory</a>
     </div>
     <p class="copy">
       🐟 Satoshi Salmon Report — Multi-Agent AI Trading Analysis<br>
