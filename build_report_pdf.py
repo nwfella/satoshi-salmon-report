@@ -14,7 +14,7 @@ import pandas as pd
 from fpdf import FPDF
 
 TICKER = sys.argv[1].upper() if len(sys.argv) > 1 else "META"
-TRADE_DATE = "2026-07-16"
+TRADE_DATE = sys.argv[2] if len(sys.argv) > 2 else datetime.now().strftime("%Y-%m-%d")
 ANALYSIS_DATE = datetime.now().strftime("%Y-%m-%d")
 TICKER_LOWER = TICKER.lower().replace("-", "")
 

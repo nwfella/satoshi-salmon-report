@@ -1,7 +1,7 @@
-**Action**: Sell
+**Action**: Hold
 
-**Reasoning**: The investment plan recommends an Underweight stance on STRC due to a structural impairment in the preferred stock issuance model. The stock trades at $88—below the $100 par value needed to issue new preferreds—forcing dilutive common equity sales instead. The dividend consumes 16x operating cash flow and tangible book value is -$15B, indicating severe fragility. While near-term Bitcoin sentiment is improving, this does not resolve the core structural problem. Per the plan, trimming positions by 25-35% and capping exposure at 3% of portfolio is the prudent course.
+**Reasoning**: The research plan's Hold verdict is the evidence-based call: short-term momentum is constructive (BTC-USD above the 10 EMA and reclaimed 50 SMA, RSI back over midline, expanding MACD histogram), but the medium/long-term structure remains bearish — 50 and 200 SMAs still falling, the November 2025 death-cross gap never repaired, MACD still below zero, and the rally ran on light volume (~29.8B vs 37.6B), the signature of a bounce inside a downtrend. Macro headwinds (86% odds of no cuts, 10-year at 4.58%, dollar up 3.1%, oil spiking) plus the circularity of the prediction-market catalysts and the absence of any fundamental valuation floor argue against chasing at the ~$64.9k–65.8k top of the range. Maintain the core position without adding at current levels; keep dry powder for the $63.3k–64.3k add zone and the $57.7k–58.5k re-accumulation retest, and let the hard lines define risk — a daily close below $62k invalidates the recovery (reduce toward underweight), while a daily close above $67.2k on expanding volume confirms an upgrade toward overweight.
 
-**Position Sizing**: Reduce by 25-35% of current allocation; maximum position limit of 3% of portfolio
+**Position Sizing**: Maintain current core allocation; do not add at the current ~$64.9k–65.8k level (top of range). Hold dry powder for incremental 10–15% tranches into the $63.3k–64.3k pullback zone; treat a daily close below $62k as the trigger to reduce toward underweight.
 
-FINAL TRANSACTION PROPOSAL: **SELL**
+FINAL TRANSACTION PROPOSAL: **HOLD**

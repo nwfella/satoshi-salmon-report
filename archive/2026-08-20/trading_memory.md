@@ -32,7 +32,7 @@ The directional call was incorrect: alpha was -0.7% vs SPY. The macro gravity th
 
 <!-- ENTRY_END -->
 
-[2026-07-14 | BTC-USD | Hold | pending]
+[2026-07-14 | BTC-USD | Hold | -0.4% | +0.1% | 5d]
 
 DECISION:
 **Final Trading Decision: BTC-USD**  
@@ -57,6 +57,9 @@ The prior lesson from the 2026-07-14 underweight decision is instructive: moment
 - If price loses the 50 SMA (~$64,335) on increasing volume, reduce exposure by 25–30% to protect against the bear’s dead-cat-bounce scenario.  
 - Monitor the 10-year yield: a sustained move below 4.30% would weaken the macro headwind and warrant a reassessment toward Overweight.  
 - No new options or leveraged positions. Risk-reward is symmetric, not asymmetric, at current levels.
+
+REFLECTION:
+The directional call to hold was effectively correct, as the flat stance generated a modest +0.1% alpha versus SPY while avoiding the drawdown from a premature contrarian sell. The balanced-risk thesis held in that the technical bounce stalled below the 200 SMA without triggering the bear’s dead-cat scenario, but the weak-volume divergence failed to resolve, capping upside. Next, I will treat a reclaim of the 200 SMA on sustained volume above $50B as a higher-conviction trigger rather than waiting for multiple confirmations that may never align.
 
 <!-- ENTRY_END -->
 
@@ -306,6 +309,25 @@ The decisive evidence is:
 - Maintain ample cash reserves. Monitor FY2026 Q2 earnings for revenue re-acceleration or cash burn stabilization.
 
 **Risk Management:** Underweight overall exposure. The 40–50% drawdown scenario cited by the conservative analyst is possible but not probable without a complete thesis break. The Hold stance protects capital while preserving the ability to deploy aggressively if the fundamental or technical picture turns decisively positive.
+
+<!-- ENTRY_END -->
+
+[2026-07-14 | BTC-USD | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Maintain the current BTC-USD core position at existing sizing and hold dry powder — do not add at the $64.9k–65.8k top of the range directly beneath the $66.3k–67.2k resistance shelf, and do not panic out on the unconfirmed recovery. Deploy incremental 10–15% tranches only into the $63.3k–64.3k pullback zone (10 EMA / reclaimed 50 SMA) and only upon evidence of stabilization (volume, momentum, daily close back above the 10 EMA) rather than on price tag alone. Hard risk lines define the trade: a daily close below $62k invalidates the recovery and triggers a reduction toward underweight; a daily close above $67.2k on meaningfully expanding volume (well above the recent ~30B level) upgrades the stance toward Overweight and opens the path to the 200 SMA at ~$73.6k. Horizon 3–6 months.
+
+**Investment Thesis**: The debate — and the Research Manager and Trader — all converge on Hold, and that convergence is itself the evidence: no analyst landed a knockout, and each stretched a genuinely mixed data set. The aggressive analyst owns the short-term momentum case, and it is real: BTC-USD sits above the 10 EMA at ~$63.3k, has reclaimed the 50 SMA at ~$64.3k, RSI is back at 56.2 and climbing (not overbought), and the MACD histogram is positive and expanding at +468. The re-pricing of downside tail risk (dip-to-$55k probability falling 21 points in a week) and the hard-asset rotation (gold at $4,600 in August now 57% priced, up ~38 points) are legitimate directional tailwinds, and the sentiment void plus contrarian "everyone bearish near 60k" chatter is at least neutral-to-supportive.
+
+But the bear's structural and logical points carry the medium term, and the neutral analyst is right that the aggressive risk-reward math is cherry-picked. The 50 SMA is still falling, the 200 SMA is still falling ~12% above price at $73.6k, MACD is still negative (-81.38), the November 2025 death-cross gap was never repaired — the definition of a bounce inside a downtrend — and the rally ran on light volume (29.8B vs 37.6B prior day), the signature of countertrend moves lacking institutional conviction. The prediction-market "catalysts" are largely circular (dip probabilities fell because price rallied; there is still a 34% one-in-three chance of a $55k dip by year-end), and the risk-reward ignores probability: if $62k breaks, the measured downside is through $60k to the $58.1k–58.6k lows (6–7k points), not the 3k the bull quotes. Macro is a live headwind, not "priced in": 86% odds of no cuts, ~50% odds of a hike by year-end, the 10-year at 4.58% and rising, the dollar up 3.1% in three months, oil spiking, and the gold bid flowing to gold over BTC (24% vs 16% as the favored hedge). And as both sides concede, a crypto asset has no income statement, balance sheet, or valuation floor — which cuts toward humility and position sizing, not aggression.
+
+The synthesis is therefore an active Hold with conditions: keep the core, keep dry powder, require stabilization before deploying into the $63.3k–64.3k zone (a quick reclaim on declining volume is an add; a heavy-volume slide through it is not), treat the $57.7k–58.5k retest as a superior re-accumulation point only if it holds with volume, enforce $62k as a hard invalidation (reduce toward underweight), and act on a $67.2k close on expanding volume as the confirmation trigger even though it means buying ~3.5% higher — the confirmation is worth the premium. This respects both the constructive tape and the unresolved bearish structure, letting the levels and volume decide rather than forecasting the trend.
+
+**Price Target**: 73600.0
+
+**Time Horizon**: 3-6 months
 
 <!-- ENTRY_END -->
 
