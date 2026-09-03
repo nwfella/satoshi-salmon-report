@@ -39,6 +39,12 @@ config["news_article_limit"] = 5
 config["global_news_article_limit"] = 3
 config["output_language"] = "English"
 config["temperature"] = 0.3
+# Bound the failure envelope: a dead/slow DeepSeek connection must cost
+# ~180s + 1 retry per call, not the OpenAI SDK default 600s read timeout
+# with unbounded retry accumulation across ~20 sequential agent calls
+# (which once turned an API outage into a 9.7-hour zombie run).
+config["llm_timeout"] = 180
+config["llm_max_retries"] = 1
 config["data_vendors"] = {
     "core_stock_apis": "yfinance",
     "technical_indicators": "yfinance",
@@ -49,7 +55,16 @@ config["data_vendors"] = {
 }
 
 ticker = "BTC-USD"
-trade_date = "2026-07-14"
+# Analyze the most recent COMPLETED trading day (the run happens Sunday
+# morning, so yesterday = Saturday and its daily candle is finalized).
+# Was previously hardcoded to 2026-07-14, which silently froze every weekly
+# report on stale July data. An explicit date as argv[1] still wins (the
+# cron runner passes it too).
+from datetime import date, timedelta
+if len(sys.argv) > 1:
+    trade_date = sys.argv[1]
+else:
+    trade_date = (date.today() - timedelta(days=1)).strftime("%Y-%m-%d")
 
 print(f"\nTicker:     {ticker}")
 print(f"Date:       {trade_date}")
