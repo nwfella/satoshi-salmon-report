@@ -1,75 +1,61 @@
 **Overall Sentiment:** **Neutral** (Score: 5.0/10)
 **Confidence:** Low
 
-# BTC-USD Sentiment Report — 2026-09-12 → 2026-09-19
+## BTC-USD Sentiment Report — 2026-09-26 to 2026-10-03
 
-**Headline:** No sentiment signal could be extracted for BTC-USD this week. All three designated sources returned empty, null, or error states. The correct read is **Neutral (5.0/10) with low confidence** — this is an "absence of evidence" call, not a directional one.
+**Bottom line: no directional sentiment signal is available this period.** All three intended sources returned empty or failed payloads. Per the analysis rules, `Neutral` is reserved for the case where sources are genuinely silent or non-committal — which is exactly the situation here. This is a data-availability outcome, **not** a market call about Bitcoin.
 
----
+### 1. Source-by-source breakdown
 
-## 1. Source-by-source breakdown
+**News headlines (Yahoo Finance, past 7 days) — EMPTY**
+- Tool result: `No news found for BTC-USD`.
+- Zero institutional-frame data points. No headlines on ETF flows, regulatory action, macro prints, exchange events, halving/m supply dynamics, or corporate treasury adoption. Because news is the slowest-moving, most fact-anchored leg of the triad, its absence removes the primary "event vs. opinion" anchor from this analysis.
+- Caveat: "no news found" for a top-of-book asset like BTC-USD over a full week is more likely a retrieval/indexing failure than a genuine information vacuum. Treat as a **data gap**, not as evidence of calm.
 
-### News headlines (Yahoo Finance, past 7 days) — **NO DATA**
-- Tool returned verbatim: `No news found for BTC-USD between 2026-09-12 and 2026-09-19`.
-- Zero headlines, therefore zero institutional framing, zero event-driven signal.
-- Important interpretive caveat: a literal "no news" result for the largest crypto asset by market cap over a full 7-day window is unusual and more likely reflects a **feed/ingestion failure or ticker-coverage gap** than a genuinely event-free week for Bitcoin. This should be treated as a **data availability problem**, not as evidence of calm. I did not substitute another ticker or proxy (e.g. a Bitcoin ETF or a related equity) because the task instructs against substitution absent explicit disproof of the resolved identity, and no tool result disproved `BTC-USD` as Bitcoin USD (CCC).
+**StockTwits (retail, cashtag-indexed) — UNAVAILABLE**
+- Tool result: `stocktwits unavailable: HTTPError`.
+- This is the single most important loss for the workflow. StockTwits supplies the Bullish/Bearish user-labeled ratio, which is the designated **leading** retail-sentiment signal. With the endpoint erroring, we have:
+  - No bullish/bearish split (the 70/30 vs. 90/10 over-extension read is impossible to compute).
+  - No message count, so sample-size weighting cannot be applied.
+  - No message bodies to check whether retail is chasing, capitulating, or apathetic.
+- Any ratio I might "recall" for BTC-USD from outside this window would be stale and would violate the instruction to base the read on the collected data. It is deliberately omitted.
 
-### StockTwits (retail-trader social, cashtag-indexed) — **UNAVAILABLE**
-- Tool returned: `stocktwits unavailable: HTTPError`.
-- This is the single most damaging loss for this workflow, because StockTwits is the designated **fast-moving, leading retail signal** and the only source that ships with a native Bullish/Bearish sentiment tag.
-- Consequence: the Bullish/Bearish ratio — the primary quantitative input described in the analysis playbook (e.g. 70/30 = moderately bullish, ≥90/10 = over-extension/contrarian risk, 50/50 = uncertainty) — **could not be computed at all**. There is no message count, no ratio, no message body to quote.
+**Reddit (r/wallstreetbets, r/stocks, r/investing, past 7 days) — SILENT**
+- Tool result: `no Reddit posts found mentioning BTC across r/wallstreetbets, r/stocks, r/investing in the past 7 days`.
+- No engagement signal at all: no upvote scores, no comment counts, no post bodies to weigh.
+- Notably, r/wallstreetbets is a high-volume sub that persistently discusses BTC; a full-week zero is again more consistent with a collection failure than with genuine retail silence. Even if literally true, the correct interpretation would be **attention deficit / no narrative** rather than bearishness — silence is not selling.
 
-### Reddit (r/wallstreetbets, r/stocks, r/investing, past 7 days) — **NO DATA**
-- Tool returned: `no Reddit posts found mentioning BTC across r/wallstreetbets, r/stocks, r/investing in the past 7 days`.
-- All three subreddits are explicitly covered and explicitly silent on BTC.
-- Note the asymmetry in how to read this: r/wallstreetbets is high-volume and frequently crypto-adjacent, so a complete 7-day absence of BTC mentions there is **hard to reconcile with a normal market week** and again points toward an indexing/query failure rather than a real collapse in retail attention. Because there are no posts, there is no engagement weighting to apply (no upvote scores, no comment counts) — the engagement signal is simply missing.
-- Per subreddit character: r/wallstreetbets (contrarian/exuberant), r/stocks (measured), r/investing (longer-term) — none contributed, so no cross-subreddit sentiment gradient is observable.
+### 2. Cross-source divergences and alignments
 
----
+- **Divergences: cannot be assessed.** The entire premise of the divergence check (e.g., bearish news framing vs. euphoric retail tagging) requires at least two populated sources. We have zero.
+- **Alignments: none meaningful.** All three channels are empty, which is technically "aligned," but empty-to-empty alignment carries no signal content. It should not be scored as confirmation of anything.
+- Net: the cross-source layer of this workflow is **non-operational** this period.
 
-## 2. Cross-source divergences and alignments
+### 3. Dominant narrative themes
 
-- **Divergence analysis is not possible.** Detecting divergence requires at least two sources with content pointing in different directions. Here, none of the three produced content. There is no news-vs-retail mismatch, no retail-vs-community mismatch, and no institutional-vs-retail gap to arbitrage as a signal.
-- **What we do have is unanimity of silence** — but that silence is *mechanical*, not *informational*. Three independent empty/error states in the same window is far more consistent with a shared upstream data problem (rate limiting, credential/HTTP failure, indexing gap) than with three independent communities simultaneously deciding Bitcoin is not worth discussing.
-- **No alignment signal either.** I explicitly decline to convert "everyone is quiet" into a "no one cares → bearish" or "calm before the storm → bullish" narrative. Both would be fabricated readings of a null dataset.
+- **Theme: none identifiable.** With no headlines, no cashtag messages, and no subreddit threads, there is no recurring topic, ticker-adjacent chatter, or meme to name. I decline to manufacture themes (e.g., "ETF flows," "halving," "macro risk") from prior knowledge, since those would be unverifiable insertions rather than observations from the supplied window.
+- The only defensible meta-observation is **absence of measurable attention** in the retrieved data — which, given the near-certain retrieval failures, is weak evidence of anything.
 
----
+### 4. Catalysts and risks surfaced by the data
 
-## 3. Dominant narrative themes
+- **Catalysts identified: none.** No scheduled events, launches, filings, or macro dates appear in the collected data.
+- **Risks identified: the data-collection risk itself.** The material risk to *this analysis* is that a trader could mistake "no signal" for "no volatility." A `Neutral` band here must **not** be read as a low-volatility or range-bound thesis on BTC-USD. Crypto is capable of large moves with no warning from social sentiment, and our ability to detect such moves was degraded to zero this period.
+- Operationally recommended mitigations before any decision: re-run the StockTwits and Reddit collectors, widen the news window, and confirm whether the Yahoo Finance query needs an alternate symbol form (e.g., `BTC-USD` vs. `BTCUSD=X`) before concluding genuine silence.
 
-- **None identifiable from the supplied data.** Narrative-theme extraction (the playbook's instruction to find the recurring topic across sources) requires text to cluster. There is no text.
-- The only meta-theme worth flagging to the trader is a **process/data-integrity theme**: this week's sentiment pipeline for `BTC-USD` is dark across all three channels. Any downstream consumer should know that a Neutral/5.0 reading here means "no measurement," not "measured equilibrium."
-
----
-
-## 4. Catalysts and risks surfaced by the data
-
-- **Catalysts: none surfaced.** No news headline, no product/regulatory/earnings-style event, no viral Reddit thread, no StockTwits spike. Nothing in the supplied data identifies an upcoming or recent catalyst for BTC-USD in this window.
-- **Risks:**
-  1. **Blind-spot risk (primary).** With all channels dark, any trader action taken on this report is effectively taken without sentiment confirmation. Price/technical and on-chain/derivatives data — not covered by these three sources — must carry the full weight.
-  2. **Regime-shift risk masked by silence.** If a sharp move is underway in BTC-USD, this workflow would not have detected it, and the market's narrative explanation (e.g. a macro print, ETF flow, or liquidation cascade) would be invisible here.
-  3. **Contrarian over-extension risk unquantifiable.** The playbook's key guardrail — flagging ≥90/10 retail bullishness as an over-extension warning — has no input this week. That check simply cannot be run.
-  4. **Retrieval risk on re-run.** Because the news query returned a clean "no news found" while StockTwits returned a hard `HTTPError`, at least part of this failure is likely transient/technical; a re-pull of the same window (especially StockTwits and the Yahoo news feed) is the highest-value next step before drawing any sentiment conclusion.
-
----
-
-## 5. Key sentiment signals summary
+### 5. Summary table of key sentiment signals
 
 | Signal | Direction | Source | Supporting evidence |
 |---|---|---|---|
-| Institutional news framing | **None (no data)** | Yahoo Finance headlines | `No news found for BTC-USD between 2026-09-12 and 2026-09-19` — 0 headlines retrieved |
-| Retail Bullish/Bearish ratio | **None (no data)** | StockTwits | `stocktwits unavailable: HTTPError` — no messages, no tags, ratio not computable |
-| Retail message volume / velocity | **None (no data)** | StockTwits | Endpoint failed outright; sample size = unknown |
-| Community engagement (upvotes/comments) | **None (no data)** | Reddit r/wallstreetbets, r/stocks, r/investing | 0 posts mentioning BTC across all three subs in past 7 days |
-| Cross-source divergence | **Not assessable** | All three | Requires ≥2 populated sources; all returned empty/error |
-| Dominant narrative theme | **Not identifiable** | All three | No text corpora available to cluster |
-| Catalysts / scheduled events | **None surfaced** | All three | No event content in any retrieved feed |
-| **Composite sentiment (this report)** | **Neutral / no-measurement** | Aggregated | 0 of 3 sources returned substantive data → score held at neutral 5.0 rather than tilted |
+| Institutional news framing | No signal | Yahoo Finance news | `No news found for BTC-USD` — 0 headlines in the 7-day window; likely indexing/retrieval gap, not a true vacuum |
+| Retail cashtag sentiment (Bullish/Bearish ratio) | No signal | StockTwits | `HTTPError` on retrieval — 0 messages; leading indicator entirely unavailable |
+| Community discussion & engagement | No signal | Reddit (r/wallstreetbets, r/stocks, r/investing) | 0 posts, 0 upvotes, 0 comments; a full week of zero across a persistently BTC-active forum suggests collection failure |
+| Cross-source divergence/alignment | Not assessable | All three | Requires ≥2 populated sources; none available |
+| Dominant narrative theme | None identifiable | All three | No text corpus to mine; themes deliberately not inferred from prior knowledge |
+| Catalysts / dated events | None surfaced | Yahoo Finance news | No event-type headlines in window |
+| **Composite sentiment** | **Neutral (data-silent)** | Aggregate | All sources empty → `Neutral` per the "genuinely silent" rule; score 5.0 with **low** confidence |
 
----
+### 6. Confidence and how to use this
 
-## 6. Bottom line for the trader
-
-Treat this as a **null result that must be carried forward as uncertainty, not as a neutral market state.** A 5.0/10 Neutral score here is a placeholder for "unmeasured," and confidence is **low** by the stated rubric (one or more sources returned a placeholder/error, and total usable data points = 0, well under the 5-point floor).
-
-**Recommended handling:** do not let this report pull a composite decision toward neutral-bullish or neutral-bearish; weight it as zero information. Prioritize (a) a re-pull of StockTwits and the Yahoo news feed for `BTC-USD`, and (b) non-sentiment inputs — price action, derivatives funding/OI, and on-chain flows — which are outside these three sources. Re-run this sentiment workflow once at least one source returns substantive content; n≥5 StockTwits messages with a bullish/bearish ratio would move confidence to medium, and all three sources populated would move it to high.
+- **Confidence: low.** Two of three sources failed outright (StockTwits HTTPError; Reddit zero) and the third returned an empty set. Per the stated rubric, any placeholder or sub-5-sample source caps confidence at `low`. There is no sample to weight, no ratio to read, and no engagement to rank.
+- **How to use it:** Treat this as a **null result**, not a directional input. Do not let `overall_score = 5.0` feed into a position size or a breakout/breakdown bias. The correct downstream action is to re-collect data (especially StockTwits and Reddit) and, if the gap persists, to fall back on price/technical and on-chain inputs that are outside this sentiment workflow's scope.
+- **Explicit warning:** `Neutral` here is a statement about *our visibility*, not about Bitcoin's outlook.

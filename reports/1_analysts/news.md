@@ -1,146 +1,138 @@
-# BTC-USD (Bitcoin USD) — Weekly Macro & News Research Report
-**Analysis date: 2026-09-19 | Lookback window: 2026-09-12 → 2026-09-19**
+# BTC-USD — Weekly News & Macro Research Report
+**Analysis date:** 2026-10-03 | **Asset:** Bitcoin USD (BTC-USD), Exchange: CCC | **Lookback:** 2026-09-26 → 2026-10-03
+
+> **Data caveat:** The asset-specific news feed returned **no articles for BTC-USD** across every window tested (1 day, 1 week, 1 month, and alt-symbol attempts). This is a vendor coverage gap for crypto, not a signal. Accordingly, this report grounds BTC-USD in **macro data (FRED)** and **live prediction-market probabilities (Polymarket)**, which are the highest-quality inputs available.
 
 ---
 
-## 1. Bottom line first
+## 1. Bottom Line (Trading-Relevant Summary)
 
-The single most important development this week is that **the Federal Reserve HIKED rates 25bp on September 16, 2026**, lifting the fed funds target upper limit from **3.75% → 4.00%** (FRED `DFEDTARU`, confirmed 2026-09-17). This was **not** a cut cycle — prediction markets now assign **96% probability to "no Fed rate cuts in 2026"** and **86% to "another Fed rate hike in 2026."** For a long-duration, liquidity-sensitive asset like BTC-USD, a *tightening* Fed with the 10Y at **~4.94–5.01%** is a structural headwind. Combined with the **collapse of US crypto market-structure legislation** and **$463M of spot Bitcoin ETF outflows** last week, the bull case rests on a thinner set of supports (historically low selling pressure, a technical rebound, low equity vol).
-
-**Stance: HOLD with a defensive skew** — not a fresh accumulation zone, and not an aggressive short given depleted sell-side supply.
+Bitcoin enters October 2026 in a **macro-dominated, range-bound regime with a modest bearish tilt**. The single most important driver is a **surging U.S. long-end yield** (10Y at **5.24%**, +111bp YoY) combined with a **hawkish Fed that markets say has essentially ruled out 2026 cuts** — a structurally hostile backdrop for a long-duration, non-yielding asset. Offsetting this, the risk backdrop is benign (VIX ~16, recession odds just **8%**, equities rallying), and crypto-specific downside is priced as limited. Net: **upside capped, floor intact → HOLD, with rallies to be treated skeptically.**
 
 ---
 
-## 2. Asset-specific news flow for BTC-USD
+## 2. Asset-Specific News (BTC-USD)
 
-Note: `BTC-USD` returned no articles via the vendor; using the sibling symbol `BTC`, which resolved successfully. Coverage is thin, and no direct spot-price feed was available (see caveats).
+- No ticker-level headlines were retrievable for `BTC-USD`. **There is no detectable idiosyncratic crypto catalyst driving the tape this week** — the move is being set by macro, not by bitcoin-native news.
+- The absence of a fresh, positive crypto narrative matters: with no ETF-flow, adoption, or regulatory headline to lean on, BTC is left to trade as a **high-beta macro/liquidity instrument**.
 
-| Item | Read-through | Direction |
+---
+
+## 3. Macro Backdrop (FRED — as of 2026-10-03)
+
+**Rates — the dominant headwind**
+- **Fed Funds Effective Rate: 3.75%** (Sep 2026), **up from 3.63%** in Aug — the Fed's most recent action was a **tightening** move, not easing. Over the trailing year the rate is down from 4.09%, but the policy direction *now* is hawkish.
+- **10Y Treasury: 5.24%** (Oct 1) — **+111bp YoY**, and up sharply from **~4.60% in mid-August** to **5.29% on Sep 30**. This is the key pressure point: real yields are rising and long-duration risk assets (BTC) must re-price.
+- **2Y Treasury: 4.78%** — **+120bp YoY**; the front end has repriced aggressively toward the hike path.
+- **Yield curve (10Y–2Y): +0.45** — positively sloped (normalized), consistent with a "no recession now, sticky inflation" regime rather than a hard-landing signal.
+
+**Inflation — sticky, propped up by geopolitics**
+- **CPI: 334.13** (Aug 2026), **+2.79% YoY**.
+- **Core PCE: 130.46** (Aug 2026), **+2.59% YoY** — still above the 2% target.
+- News flow flags an **Iran-war inflation impulse** ("not just because of oil"), keeping the Fed boxed in.
+
+**Labor & Growth — resilient, not weak**
+- **Unemployment: 4.2%** (Sep 2026), down 30bp YoY; a September jobs report **missed** but was not recessionary.
+- **Real GDP: +1.17%** over the window (Q2 2026, ~2.3% annualized pace) — modest positive growth.
+
+**Volatility — complacent**
+- **VIX: 16.39** (Oct 1), essentially flat YoY and low. Equities rallied on **"Fed rate-hike expectations fading"** and easing tech yields. **Low VIX + rising long yields = a risk-on equity tape funded by a hawkish-rates backdrop** — a mix that historically caps crypto beta.
+
+---
+
+## 4. Geopolitics & Policy
+
+- **Iran:** Polymarket prices a **16% chance of a U.S. invasion of Iran before 2027** (+1pp WoW) on ~$72M volume — a deep, highly-traded market. The war is explicitly feeding inflation, which is the transmission channel back into Fed policy and thus into BTC.
+- **U.S. politics:** The dominant "government shutdown" markets resolve combined with 2026 House outcomes (Democratic-House scenario ~94%), implying a **divided-government / gridlock** setup that reduces the odds of pro-crypto fiscal/regulatory action.
+
+---
+
+## 5. Prediction-Market Signals (Live, market-implied)
+
+**Fed policy (hawkish):**
+- **"No Fed rate cuts in 2026": 96%** — cuts are off the table.
+- **"Another Fed rate hike in 2026": 72%** ($522k volume), but **−18pp WoW** — hike odds are *fading*.
+- **"2 Fed rate hikes in 2026": 64%** (+10.5pp WoW).
+
+**BTC-USD price distribution (resolves 2026-12-31):**
+- Upside: **$100k = 36%** (+1.0pp WoW); $150k = 2%; $250k = 1%.
+- Downside: $55k = 8%; $50k = 6%; **$45k = 4%**; $35k = 2%.
+- **Bitcoin all-time high by end-2026: 6% (−2.1pp WoW).**
+- **Interpretation:** BTC is priced as **well above $55k but below $100k**, likely in the mid-to-high-$80k zone. The market assigns **more probability to a +10–15% grind than to a >35% crash**, but the ATH is a long shot and that probability is *shrinking*.
+
+**Crypto breadth/health:**
+- **Total crypto market cap to $3.5T: 38% (+7.0pp WoW)** — breadth improving.
+- To $3.75T: 20%; to $4T: 5%; dip to $1.75T: 4%.
+
+**Regulatory catalysts (fading):**
+- **Crypto Market Structure legislation becomes law in 2026: 5% (−3.0pp WoW)** — a hoped-for catalyst is decaying.
+- **Trump eliminates capital-gains tax on crypto before 2027: 2%.**
+
+**Security overhang:**
+- **>$2.5B crypto hacks in 2026: 98% (+11.3pp WoW)**; >$3B: 60%; >$3.5B: 13% (−22.9pp WoW). Hack risk remains a persistent sentiment drag.
+
+**Recession & inflation:**
+- **US recession by end-2026: 8% (−1.0pp WoW)** — low.
+- **Inflation >4.5% in 2026: 12% (−4.5pp WoW)** — marginal disinflation relief.
+
+---
+
+## 6. Synthesis — What This Means for BTC-USD
+
+| Force | Direction for BTC | Evidence |
 |---|---|---|
-| **Spot Bitcoin ETFs lose $463M** last week, "difficult time for markets" | Institutional demand is net-negative; the marginal ETF buyer has stepped away | Bearish |
-| **Bitcoin selling pressure drops to historic lows amid rebound** | Long-term holders and recent cohorts are no longer distributing — supply dry-up supports price | Bullish |
-| **Clarity Act Senate vote (Sept 15) odds collapse** — Clarity Act signed into law in 2026 now **6% (−19pp w/w)**; >50 Senators voting yes **8% (−40.5pp w/w)** | The positive regulatory catalyst that many had positioned for failed. Removes a 2026 upside driver | Bearish |
-| **CoinEx (Hong Kong) shutting down** after 9 years | Venue consolidation / industry stress; marginal negative for sentiment and liquidity | Mildly bearish |
-| **Kevin O'Leary says he's buying crypto again** for "the next bull" | High-profile but anecdotal sentiment datapoint; no flow impact | Mildly bullish |
-| **Crypto hacks: >$2B in 2026 now 88% (+38pp w/w)** | A large hack this week pushed cumulative 2026 losses past $2B — a real, negative, event-driven catalyst | Bearish |
+| 10Y yield 5.24%, +111bp YoY | **Bearish** | Rising discount rate / opportunity cost; BTC is long-duration & non-yielding |
+| Fed: 96% no cuts, 72% further hike | **Bearish** | Liquidity stays tight; no easing tailwind |
+| Sticky inflation (CPI +2.79%, core PCE +2.59%) | **Bearish** | Removes scope for dovish pivot |
+| Rising 2Y (4.78%) & normal curve | **Bearish/Neutral** | Front-end repricing, but no hard-landing signal |
+| Recession odds 8%, VIX 16.4 | **Bullish (floor)** | Risk appetite intact; equities rallying |
+| Crypto cap $3.5T +7pp WoW; $100k +1pp | **Mildly bullish** | Breadth improving, sentiment stabilizing |
+| ATH odds 6% and **falling** | **Bearish** | Momentum to new highs is fading |
+| Market-structure bill 5% (−3pp) | **Bearish** | Regulatory catalyst evaporating |
 
-**Net news read: moderately bearish**, led by the regulatory failure, ETF outflows, and hack news, partially offset by the supply-side "selling pressure at historic lows" signal.
-
----
-
-## 3. Macro backdrop — the dominant driver
-
-### 3.1 Policy: the Fed is tightening, not easing
-- **Fed funds target range upper limit: 4.00%** (as of 2026-09-17), up from 3.75% — a **25bp hike on Sept 16**.
-- **Effective fed funds (FEDFUNDS, monthly): 3.63%** (Aug 2026), *flat all year* — this series lags the Sept hike and reflects the prior 3.50–3.75% range; expect ~3.9% in the September print.
-- **Market pricing:** "No cuts in 2026" **96%** (very deep, $8.5M volume). "Another hike in 2026" **86%** ($70.7k volume — thinner but directionally consistent). Distribution shifted **from 1 hike to 2 hikes** this week (+21pp).
-- **Global tightening wave:** BoE hike 2026 **84%**, BoC hike 2026 **66% (+21.5pp)**, Japan "joins the rate hike parade" (MoneyShow, Sept 18). This is a **synchronized global tightening impulse** — historically the worst liquidity regime for crypto.
-
-### 3.2 Inflation: sticky near 3%, above target
-- **CPI: 334.131 (Aug 2026), +3.05% y/y**
-- **Core PCE: 130.658 (Jul 2026), +2.92% y/y**
-- Both are above the 2% target and *not* decelerating fast enough to justify cuts — consistent with the hawkish Fed reaction function.
-
-### 3.3 Growth & labor: too strong to cut
-- **Real GDP: $24,269.6B (Q2 2026), +1.01% q/q** — roughly **~4% annualized**, a re-acceleration.
-- **Unemployment: 4.1% (Aug 2026)**, down from 4.4% a year ago; labor market firm.
-- **Strong growth + sticky inflation + hawkish Fed = "higher for longer."** This is the classic regime that pressures speculative/long-duration assets while favoring cash yields. Recession odds remain low (**US recession by end-2026: 8%**), so the bear case is a *valuation/liquidity* bear, not a growth collapse.
-
-### 3.4 Rates & risk gauges
-- **10Y Treasury: 4.94% (Sept 17)**, peaked at **5.01% on Sept 16** — up from 4.14% a year ago, and a sharp move from 4.75% on Aug 31. Rising long yields raise BTC's discount rate and compete for capital.
-- **2Y Treasury: 4.67% (Sept 17)**, up from 4.13% in late May — the front end repriced hawkishly post-hike.
-- **Yield curve (10Y–2Y): +0.25**, *flattening* from +0.51 in mid-August — front-end-led tightening, not a growth-driven steepener.
-- **VIX: 15.44 (Sept 17)**, spiked to 17.71 on Sept 16 then faded. Equity vol is **low and complacent**, which historically coincides with low realized crypto vol but also leaves crypto vulnerable to any vol shock.
+**Net read:** The **bearish macro forces (rates/Fed/inflation)** dominate the **supportive risk-backdrop forces**, producing a **range-bound tape with capped upside**. BTC's correlation to liquidity/high-beta risk is doing the work; there is no crypto-native catalyst to break the range.
 
 ---
 
-## 4. Prediction-market implied odds (Polymarket, live)
+## 7. Actionable Insights & Triggers
 
-### BTC-USD price distribution (resolves 2026-12-31)
-| Level | Probability | 1-week change |
-|---|---|---|
-| Dip to $35,000 | 3% | −2.6pp |
-| Dip to $40,000 | 6% | −2.0pp |
-| Dip to $45,000 | 4% | −3.0pp |
-| Dip to $50,000 | 10% | −3.5pp |
-| Dip to $55,000 | 14% | −5.0pp |
-| Reach $100,000 | 26–28% | **+6.0 to +6.5pp** |
-| Reach $150,000 | 2% | −0.3pp |
-| Reach $200,000 | 1% | +0.1pp |
-| Reach $250,000 | 1% | +0.2pp |
-| ATH by Dec 31, 2026 | 6% | −1.9pp |
-| ATH by Sept 30, 2026 | 0% | −0.2pp |
+**Stance: HOLD** (neutral with a bearish tilt). Not a high-conviction short — downside is well-protected by low recession odds and a benign VIX — but the risk/reward does **not** justify adding here.
 
-**Interpretation:** The distribution is **asymmetric to the downside in magnitude but with a fat right shoulder capped low**. Upside tails are almost fully extinguished ($250k = 1%), while a 10–14% probability of $50–55k remains live. The market moved **more constructive this week** (upside odds up ~6pp, downside odds down 3–5pp), implying BTC **rebounded** over the last 7 days. It also implies BTC is *notably below $100k* — with ATH odds at 0% for September and only 6% by year-end → **spot is most plausibly in the ~$70k–$80k zone**.
-
-### Macro & crypto event markets
-| Event | Implied prob | 1-week change |
-|---|---|---|
-| No Fed rate cuts in 2026 | 96% | +1.7pp |
-| Another Fed rate hike in 2026 | 86% | — |
-| 2 Fed rate hikes in 2026 | 62% | +21.0pp |
-| US recession by end-2026 | 8% | +2.0pp |
-| Crypto Market Structure law in 2026 | 16% | −11.5pp |
-| Clarity Act signed into law 2026 | 6% | −19.0pp |
-| Over $2B crypto hack value in 2026 | 88% | +38.0pp |
-| Total crypto mcap hits $3.5T in 2026 | 30% | −14.0pp |
-| Total crypto mcap hits $3.75T in 2026 | 20% | +2.5pp |
-
-### Cross-asset crypto read
-- **ETH:** "Reach $2,700 in September" **68% (+24pp)**, "$3,200" 5%, "$4,000" 0% → ETH ≈ **$2,550–2,700**; no September upside.
-- **SOL:** "Dip to $60" 11%, "Reach $180" 12% → SOL ≈ **~$105–125**.
-- **Total crypto market cap** below $3.5T is the base case → the **broad crypto complex remains in drawdown**, with crowded upside trades already unwound.
-- **Hard-asset rotation:** global news this week highlights **silver at a weekly high** and gold/silver "sending investors a strong signal." Note the **divergence**: precious metals are catching the debasement/inflation-hedge bid while BTC-USD is not. That rotation away from crypto toward metals is a meaningful relative-value signal.
+1. **Fade strength into resistance / level discipline.** With only **36% odds of $100k** and the ATH at **6% and falling**, rallies toward prior highs are more likely to be sold than broken. Treat the upper range as a de-risking zone, not a breakout buy.
+2. **The #1 trigger to watch is the 10Y yield.** A sustained move **above ~5.30%** is a fresh headwind (BTC lower); a decisive break **back below ~4.90%** is the single most bullish macro development for BTC-USD and would likely lift the $100k/ATH odds.
+3. **Watch Fed hike pricing.** The 72% "another hike" odds are **−18pp WoW**. Continued fading of hike odds (dovish drift) is a **near-term positive** that can sustain a relief rally; a re-acceleration of hike odds is a sell trigger.
+4. **Watch the market-structure bill (5%, −3pp).** Any legislative progress would be a rare crypto-native positive catalyst; its continued decay removes an upside driver.
+5. **Iran escalation is a two-sided risk.** Higher invasion odds (now 16%) are a **risk-off, BTC-negative** headline event, but the inflation impulse keeps the Fed hawkish — double-negative for BTC.
+6. **Downside is priced thin but real.** The market prices only ~4–8% for $45–55k, so a macro shock (yield spike, geopolitical escalation) would hit into **under-hedged downside** — favor defined-risk positioning over unhedged long exposure.
+7. **Trade the range, not the trend.** Until the 10Y yield or Fed path breaks, BTC-USD is a mean-reversion instrument; size accordingly and avoid extrapolating.
 
 ---
 
-## 5. Actionable trading implications
+## 8. Key Data Summary Table
 
-1. **Respect the tightening regime.** A Fed that just hiked, with 86% odds of another hike and 96% odds of no cuts, is the single largest obstacle for BTC-USD. Rising 10Y (→5.01%) and 2Y (→4.67%) raise the opportunity cost of holding a non-yielding asset.
-2. **Fade the regulatory hope trade.** Clarity Act odds at 6% (−19pp) and >50-Senate-votes at 8% (−40.5pp) mean the "US crypto clarity" catalyst is dead for 2026 — remove it from your thesis.
-3. **Watch ETF flows as the swing factor.** $463M of weekly outflows confirms institutions are trimming. A return to net inflows is the single cleanest bullish confirmation signal; sustained outflows argue for continued chop-to-lower.
-4. **The one genuine bull input is supply.** "Selling pressure at historic lows amid rebound" plus the market's improved 1-week skew (+6pp on $100k) suggests dips are being absorbed. This argues **against aggressive shorting** and for using weakness, not strength, to add.
-5. **Asymmetric payoff favors selling rallies, not buying breakouts.** With $250k/$150k tails at 1–2% and a live 10–14% chance of $50–55k, risk/reward is skewed down. Preferred expression: reduce/trim into strength toward the low-$80ks, keep a core position, and place bids toward the $60–65k value zone.
-6. **Event risk is elevated and underappreciated.** Crypto hacks >$2B in 2026 at 88% (+38pp this week), CoinEx shutdown, and low VIX (15.4) = a market that is **complacent on idiosyncratic crypto tail risk**. Size positions accordingly; avoid leverage.
-7. **Relative value:** If you hold the debasement-hedge thesis, **precious metals currently express it better than BTC-USD** (silver at weekly highs vs. BTC below $100k). Consider rotating a portion of crypto exposure to metals.
-8. **Invalidation levels to monitor:** A decisive reclaim of **$100,000** with ETF inflows turning positive would flip the regime bullish; a break below **~$65,000** on rising volume, or another Fed hike in December, would open the door to the $50–55k scenario (10–14% priced).
-
----
-
-## 6. Key data summary table
-
-| Category | Metric | Latest | Context / Trend | Signal for BTC-USD |
+| Category | Indicator / Market | Latest | Change | Signal for BTC-USD |
 |---|---|---|---|---|
-| **Policy** | Fed funds target upper (DFEDTARU) | **4.00%** (2026-09-17) | **Hiked 25bp Sept 16** from 3.75% | **Bearish** |
-| Policy | Effective fed funds (FEDFUNDS) | 3.63% (Aug) | Flat YTD; pre-hike range, lags Sept move | Neutral/lag |
-| Policy odds | No cuts in 2026 | **96%** | +1.7pp w/w; $8.5M volume | Bearish |
-| Policy odds | Another hike in 2026 | **86%** | 2 hikes priced 62% (+21pp) | Bearish |
-| Global policy | BoE / BoC hike 2026 | 84% / 66% | Japan hiking too | Bearish |
-| Inflation | CPI y/y | **+3.05%** (Aug) | Sticky, above target | Bearish (forces hikes) |
-| Inflation | Core PCE y/y | **+2.92%** (Jul) | Above target | Bearish |
-| Growth | Real GDP q/q | **+1.01%** (Q2) | ~4% annualized, re-accelerating | Mix (growth cuts odds) |
-| Labor | Unemployment | **4.1%** (Aug) | Down from 4.4% y/y | Neutral/mix |
-| Rates | 10Y Treasury | **4.94%** (Sep 17) | Peak 5.01% Sep 16; +0.80pp y/y | **Bearish** |
-| Rates | 2Y Treasury | **4.67%** (Sep 17) | +0.54pp since late May | Bearish |
-| Curve | 10Y–2Y | **+0.25** | Flattening from +0.51 (Aug 14) | Bearish (front-led) |
-| Risk | VIX | **15.44** (Sep 17) | Spike to 17.71 Sep 16, faded | Neutral (complacent) |
-| BTC-USD news | Spot BTC ETF flows | **−$463M/wk** | "Difficult" market | Bearish |
-| BTC-USD news | Selling pressure | Historic lows | Rebound underway | **Bullish** |
-| BTC-USD news | Clarity Act law 2026 | **6%** (−19pp) | Senate vote failed | **Bearish** |
-| BTC-USD news | Crypto hacks >$2B 2026 | **88%** (+38pp) | Event-driven negative | Bearish |
-| BTC-USD odds | Reach $100k by Dec 31 | **26–28%** (+6pp) | Implies spot ~$70–80k | Mixed |
-| BTC-USD odds | Dip to $50–55k | **10–14%** (−3.5 to −5pp) | Downside live but fading | Caution |
-| BTC-USD odds | ATH by Dec 31 | **6%** | Upside cap very low | **Bearish** |
-| Recession | US recession by end-2026 | **8%** | Low; not a growth bear | Neutral |
-| Cross-asset | ETH / SOL implied spot | ~$2,550–2,700 / ~$105–125 | Alt complex in drawdown | Bearish |
-| Cross-asset | Silver | Weekly high | Precious metals bid vs. BTC | **Relative bearish** |
+| Policy | Fed Funds Effective Rate | 3.75% (Sep '26) | +0.12 MoM; −0.34 YoY | Bearish (tightening bias) |
+| Policy | "No Fed cuts in 2026" (Polymarket) | 96% | −1.2pp WoW | Bearish |
+| Policy | "Another Fed hike in 2026" | 72% | −18pp WoW | Bearish (but easing) |
+| Rates | 10Y Treasury | 5.24% | +111bp YoY | **Bearish (key driver)** |
+| Rates | 2Y Treasury | 4.78% | +120bp YoY | Bearish |
+| Rates | Yield curve (10Y–2Y) | +0.45 | −0.10 YoY | Neutral (no recession) |
+| Inflation | CPI YoY | +2.79% | Sticky | Bearish (limits easing) |
+| Inflation | Core PCE YoY | +2.59% | Sticky | Bearish |
+| Inflation | "Inflation >4.5% in 2026" | 12% | −4.5pp WoW | Mildly bullish (disinflation) |
+| Labor | Unemployment | 4.2% (Sep '26) | −0.30 YoY | Neutral |
+| Growth | Real GDP (QoQ window) | +1.17% | Modest | Neutral/Mildly bullish |
+| Risk | VIX | 16.39 | −1.6% YoY | Bullish (floor) |
+| Risk | "US recession by end-2026" | 8% | −1.0pp WoW | Bullish (floor) |
+| Crypto | BTC $100k by 12/31/26 | 36% | +1.0pp WoW | Mildly bullish (capped) |
+| Crypto | BTC ATH by 12/31/26 | 6% | −2.1pp WoW | **Bearish (fading)** |
+| Crypto | BTC dip to $55k / $45k | 8% / 4% | −1.0 / −0.4pp WoW | Downside perceived limited |
+| Crypto | Total crypto cap to $3.5T | 38% | +7.0pp WoW | Mildly bullish |
+| Policy | Crypto market-structure law 2026 | 5% | −3.0pp WoW | Bearish (catalyst fading) |
+| Security | >$2.5B crypto hacks 2026 | 98% | +11.3pp WoW | Bearish (sentiment drag) |
+| Geopolitics | US invades Iran before 2027 | 16% | +1.0pp WoW | Bearish (risk-off + inflation) |
 
 ---
 
-## 7. Caveats & data limitations
-- `get_news` returned **no articles for the exact symbol `BTC-USD`** across all windows; crypto news was sourced via the vendor's **`BTC`** feed (same asset, fewer articles). News coverage is thin.
-- **No direct spot BTC-USD price feed** was available; the ~$70k–$80k spot estimate is **inferred** from prediction-market structure (ATH odds 0–6%, $100k odds 26–28%, $50–55k dip odds) and is directional, not precise.
-- VIX data ends **2026-09-17**; FEDFUNDS monthly lags the Sept 16 hike. The 86% "another hike" market has **low volume (~$71k)** vs. the 96% "no cuts" market (**$8.5M**) — weight the deep market more heavily.
-- Prediction-market probabilities are **crowd-priced odds, not forecasts**.
-
-**FINAL TRANSACTION PROPOSAL: HOLD** (defensive skew — trim into strength toward low-$80ks, avoid leverage, keep core exposure, bids nearer $60–65k; flip bullish only on a $100k reclaim with ETF inflows turning positive)
+**FINAL TRANSACTION PROPOSAL: HOLD** — BTC-USD is range-bound and macro-capped by a 5.24% 10-year yield and a Fed with cuts fully priced out (96%); downside is protected by low recession odds (8%) and benign volatility (VIX 16), so neither a high-conviction long nor an aggressive short is warranted. Trim into strength, keep defined-risk exposure, and let the **10Y yield (watch 5.30% up / 4.90% down)** and **Fed hike pricing** dictate the next directional break.

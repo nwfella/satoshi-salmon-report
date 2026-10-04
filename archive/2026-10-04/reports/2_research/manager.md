@@ -1,0 +1,19 @@
+**Recommendation**: Underweight
+
+**Rationale**: Both sides came in sharp, and this was a genuinely close round — but the most current, concrete evidence tips the near-term balance toward the bears.
+
+The bull's core case is strong on structure: he argues the "rising yields cap BTC" thesis was falsified live (BTC +33.9% while the 10Y rose 69bp), that the chart is a textbook stacked bullish alignment (price > 10 EMA > 50 SMA > 200 SMA, golden cross now ~$7,133 wide and widening, price +0.42% above a rising VWMA, RSI 63.73 with room), that the prediction-market distribution is right-skewed (~39% for $100k vs ~20% for ≤$55k), and that an ATR squeeze inside an uptrend resolves upward. He frames the trade as asymmetric: "bears need to break four supports, bulls need one breakout."
+
+The bear didn't fold, and he landed the more damaging blows. He showed the rates argument is a single-window coincidence — BTC has actually slipped from $86,602.91 (Sep 21) to $84,763.58 since, with the 10Y still at 5.24% and the Fed path still hawkish (96% no 2026 cuts, 64% two hikes, and two-hike odds +10.5pp WoW — catching the bull cherry-picking the -18pp whip). More importantly, he showed momentum rolling over: MACD crossed below signal on Sep 29 with the histogram at -153.88 and widening, RSI printing a lower high (73.85 → 63.73), price rejected repeatedly at $87,100–$87,365, and — the point the bull never really answered — volume collapsing from $57.7B on the Sep 21 impulse to $12.57B on Oct 3. A high-volume spike followed by thinning volume into resistance that keeps rejecting is an exhaustion/distribution signature, not absorption. He also correctly reframed the "four supports" as air pockets: crypto supports aren't fortresses, and the trend-invalidation line at $78,559 is only 7.3% away at 2.57% ATR.
+
+Where this lands: the bull is right that the primary uptrend is intact and unbroken, so shorting outright is premature — the $78,559 50-SMA invalidation is 7.3% away and hasn't been touched. But the debate's strongest and most current evidence (bearish MACD cross with widening negative histogram, lower RSI highs, repeated rejection at $87,365, and the volume collapse) describes a market distributing into resistance rather than coiling for a breakout. The bull is asking us to buy a breakout the tape keeps refusing to give, and the macro bid is a competing 5.24% risk-free rate. That warrants caution and trimming — not adding, and not a full exit. Hence Underweight.
+
+**Strategic Actions**: 1) Trim into strength: reduce BTC-USD exposure by roughly 25–40% into rallies toward $86,500–$87,365 — the zone that has rejected price repeatedly. Do not chase the bull's breakout.
+
+2) Keep a reduced core. Respect the intact primary uptrend: do not initiate outright shorts while price is +7.9% above the 50-SMA. The bear's mean-reversion call requires a trend break that hasn't happened yet.
+
+3) Set two hard alert levels. (a) A daily close below $82,442 (Bollinger middle / 20-SMA) flips the intermediate bias bearish — trim further, with $80,900 as the next shelf. (b) A daily close below $78,559 (50-SMA) kills the medium-term uptrend and is the trigger to move from Underweight to outright Sell/avoid.
+
+4) Re-engage long ONLY on the bull's confirmed trigger: a daily close above $87,365 accompanied by expanding volume (materially above the current ~$12.5B run-rate) AND a positive MACD histogram re-cross. Make the breakout earn the add rather than front-running it.
+
+5) Sizing/risk: hold net exposure below benchmark weight. Size any tactical trades to the 2.57% ATR — stops inside ~1.5× ATR (~$3,270) will get noise-stopped in this range. For tactical shorts already in the book, use a stop above $87,400 as the bear proposed. Do not deploy fresh capital long until either the $82,442 support holds with a bullish reversal candle or the $87,365 breakout confirms on volume.
