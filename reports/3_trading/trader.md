@@ -1,11 +1,11 @@
 **Action**: Sell
 
-**Reasoning**: The research plan lands on Underweight: while the primary uptrend is intact (price > 10 EMA > 50 SMA > 200 SMA, price +7.9% above the 50-SMA), the most current and concrete evidence is distributionary — a bearish MACD cross on Sep 29 with histogram at -153.88 and widening, a lower RSI high (73.85→63.73), repeated rejection at $87,100–$87,365, and volume collapsing from $57.7B (Sep 21 impulse) to $12.57B by Oct 3. A 5.24% risk-free rate competes directly with the macro bid, so trimming into strength rather than chasing a breakout is warranted. I am not initiating an outright short — the $78,559 50-SMA invalidation is still 7.3% away — so this is a trim to below-benchmark net exposure, not a full exit, with re-engagement only on a confirmed daily close above $87,365 on expanding volume and a positive MACD histogram re-cross.
+**Reasoning**: The plan's Underweight call maps to reducing exposure: the primary trend is intact (price ~15% above a rising 200 SMA at $71,918, bullish MA stack, RSI reset to ~51 without breaking trend, thin crash tail) which argues against a full exit, but the tradeable horizon has clearly deteriorated. BTC-USD trades below its 10 EMA ($83,608), VWMA ($84,100), and Bollinger middle ($84,373) with a widening negative MACD histogram, amid a pointed macro headwind (10Y 5.22%, Fed funds 3.75%, core PCE +2.59%, oil $103) that raises the opportunity cost of a zero-yield asset. Decisively, buying at $82,912 with a stop below $80,336 offers under 1.5:1 R/R and sits inside a single ATR (~$2,094), making entries whipsaw-prone — so trim into strength rather than add.
 
-**Entry Price**: 86500.0
+**Entry Price**: 86480.0
 
-**Stop Loss**: 87400.0
+**Stop Loss**: 80336.0
 
-**Position Sizing**: Trim 25–40% of existing BTC-USD exposure into $86,500–$87,365; hold net exposure below benchmark weight. Do not add long; tactical shorts stop above $87,400.
+**Position Sizing**: Reduce to below benchmark weight; keep residual core modest. With ATR ~$2,094 (~2.5% of price), size so a 2.5% adverse day is within tolerance; prefer wider stops / smaller size or defined-risk structures (protective puts) over a naked stop near $80,336.
 
 FINAL TRANSACTION PROPOSAL: **SELL**
