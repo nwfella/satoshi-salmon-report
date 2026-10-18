@@ -1,88 +1,113 @@
-**Overall Sentiment:** **Neutral** (Score: 5.0/10)
+**Overall Sentiment:** **Mildly Bearish** (Score: 4.2/10)
 **Confidence:** Low
 
-## Sentiment Report — `BTC-USD` (Bitcoin USD, CCC)
-**Coverage window:** 2026-10-03 → 2026-10-10 · **Analysis date:** 2026-10-10
+# BTC-USD Sentiment Report — 2026-10-10 → 2026-10-17
+
+**Bottom line:** The readable signal is a *broken-support, fear-driven tape with retail dip-buying rather than retail capitulation*. Labeled StockTwits sentiment is effectively a coin-flip (6 Bullish / 5 Bearish), but the *content* of the conversation is dominated by downside levels ($81K lost, $77–78K next, $60K tail) and macro pessimism, while the bullish cohort leans on hope, contrarian framing, and one sarcastic tag. r/wallstreetbets shows the classic late-drawdown pattern of capitulation followed by re-leveraging into BTC/MSTR on margin. News flow is entirely absent, so there is **no institutional framing input** — this is a one-and-a-half-source read and confidence is correspondingly **low**.
 
 ---
 
-### 1. Source-by-source breakdown
+## 1. Source-by-source breakdown
 
-**A. News headlines (Yahoo Finance, past 7 days) — NO DATA**
-The feed returned `No news found for BTC-USD`. This is not a normal state for the largest crypto asset by market cap, which typically generates multiple headlines per day (ETF flows, macro/rates, exchange news, regulatory actions, large-holder moves). Two readings are possible, and they should be distinguished:
-- **(i) Genuine news vacuum** — a quiet tape with no discrete events inside the window, which itself would be mildly supportive/neutral for a mature asset (no negative catalysts).
-- **(ii) Feed/indexing failure** — the ticker returned empty because of a retrieval problem, not because the world was silent.
+### A. News (Yahoo Finance, past 7 days) — **NO DATA**
+- Returned the literal placeholder `No news found for BTC-USD`. This is a genuine data gap, not a neutral reading.
+- Consequence: **zero** institutional/event framing for the window. We cannot test whether the price weakness being discussed on social platforms was macro-driven (rates, risk-off, ETF flows), crypto-native (leverage liquidation, exchange/regulatory headline), or purely technical. Every macro assertion below therefore comes from *retail interpretation*, not verified reporting — treat it as narrative color, not fact.
+- It also means cross-source divergence analysis (best practice #2) can only be run between two retail venues, which are correlated and non-independent.
 
-Because I cannot verify which, I treat this as **zero institutional signal**, not as evidence of calm. It is a **data gap, not a neutral data point**. No headline-level facts, no event-driven framing, and no institutional tone can be extracted for `BTC-USD` this week.
+### B. StockTwits — **30 messages: 6 Bullish (20%) / 5 Bearish (17%) / 19 Unlabeled (63%)**
+Base rate on the *labeled* subset is 6:5 — essentially 50/50, i.e. **uncertainty, not a directional edge**. Per best-practice #1, this is nowhere near the 70/30 threshold that would justify a moderate bullish read, and the 63% unlabeled share further dilutes the ratio's signal value. Two data-quality caveats materially shrink the effective sample:
+1. **Single-account concentration:** `@NotFinancialAdviceDummy` accounts for 6 of 30 messages (~20%) — four bare-link dumps (Meta nuclear/AI power, AP nuclear, Google–Constellation 890MW PJM deal), plus one macro-bearish text post, plus "$BTC.X" filler. That is 20% of the "unlabeled" bucket produced by one user, so genuine independent voices are closer to **~24**.
+2. **Timestamp offset:** message timestamps run to `2026-10-18T16:0xZ`, i.e. roughly 24h *past* the stated analysis window end. The window read is therefore slightly forward-looking relative to 2026-10-17; the substance is unchanged but the tape referenced may have moved intraday.
 
-**B. StockTwits (retail-trader cashtag stream) — UNAVAILABLE**
-The pull failed with an `HTTPError` placeholder. This removes the single most useful *leading* sentiment instrument in the stack: the user-labeled Bullish/Bearish ratio. There is therefore **no measurable retail bull/bear split, no message count, and no ability to test for over-extension** (the ≥90/10 contrarian warning level) or for capitulation (≤10/90). Retail positioning for `BTC-USD` is, for this report, a **complete blank**.
+**Bearish voices (5) — specific, level-based, and coherent:**
+- `@dontstarvebulls`: "60k" — a full cycle-low retest call.
+- `@Fawl3r`: "once it breaks $80K….. it's going to get real nasty….." — treat $80K as the pivotal line.
+- `@NatoshiSakamato`: "It will get ugly if it breaks down $77K-$78K level…"
+- `@Michael_Seller_BEAR`: "81K BROKE AGAIN LMAO" — confirms a *repeated* failure at $81K, i.e. a lower-high/failed-reclaim structure, not a one-off dip.
+- `@NotFinancialAdviceDummy` (the one Bearish tag): "Leave Bitcoin and strategy fast or suffer black Monday. $MSTZ" + separately "71% of the people thinks the USA economy is heading in the wrong direction. Bitcoin will be a major participant in the midterm selloff."
 
-**C. Reddit (r/wallstreetbets, r/stocks, r/investing, past 7 days) — 2 LOW-SIGNAL POSTS, NO ENGAGEMENT DATA**
-- `r/stocks`: **no posts found** mentioning BTC.
-- `r/investing`: **no posts found** mentioning BTC.
-- `r/wallstreetbets`: **2 posts**, surfaced via RSS with **scores and comment counts unavailable**.
-  - **[2026-10-08]** *"so the industry that is entirely based on hedging risk(Wall Street)… risks their whole salary lol"* — body references a Business Insider report encountered during a TSLA DD. This is a **sarcastic, anti-institutional quip**, not a directional view on `BTC-USD`. It touches crypto-adjacent reflexive cynicism toward Wall Street risk-taking but carries **no BTC thesis**.
-  - **[2026-10-06]** *"GLXY - what the hell is going on this quarter?"* — body excerpt: *"Crypto has had a strong quarter, GLXY has huge exposure to BTC/ETH/SOL and the treasury gains should be significant… Helios/AI infrastructure keeps getting built out…"* This is the **only post in the entire dataset that makes a substantive claim about crypto**, and it is **mildly constructive**: an explicit assertion that crypto "has had a strong quarter" and that BTC/ETH/SOL treasury exposure *should* be producing significant gains. Note the framing is genuinely puzzled (a holder confused that the equity is not reflecting crypto strength) — a *positive crypto / negative equity* divergence thesis, not a clean bullish call on `BTC-USD` itself.
+**Bullish voices (6) — hope, contrarianism, and irony rather than momentum:**
+- `@Bullshyte`: "Extreme fear = buy!" — explicit acknowledgment that the prevailing sentiment is fear; a contrarian entry thesis, not evidence of strength.
+- `@Tomtwitss`: "Buy time for tomorrow" — knife-catch framing.
+- `@johnnyrivers0110`: "$BTC.X 😈🔺 85 k ... Tick tock The FiB 🔺" — a Fib-based upside target meaningfully above spot, i.e. a bounce thesis.
+- `@BullTrade9`: "I didn't even see this many bears when BTC was 60k" — a genuine contrarian tell: sentiment is *worse than at the cycle low*.
+- `@XRProcketman`: "uptober sucks" — Bullish-tagged but sarcastic/ironic; should be discounted as a bullish data point.
+- `@Natty17`: "$BTC.X" — tag only, no content; weight ≈ 0.
 
-**Engagement caveat:** with no upvote or comment counts, per best practice I cannot separate signal from noise. A cryptically worded 3-upvote post and a 400-upvote front-page thread would carry wildly different weight, and I am blind to which of these is which. Both posts are treated as **anecdote, not evidence**.
+**Genuinely unlabeled-but-directional posts** skew bearish in substance:
+- `@Utreggg`: "I honestly see no convincing reason why Bitcoin should hold its current price… Interest rates, mounting debt, geopolitical tensions and tightening financ[ial conditions]" — the most substantive bear case in the sample, and it maps to a macro-driven (not crypto-native) drawdown thesis.
+- `@HereForFunsies`: "wouldn't mind seeing 78K today for a bounce back above 80-81 and hold" — downside expectation with a tentative bounce plan; tactically bearish, structurally hoping.
+- `@Bookrunner`: "You kids think this move is bad wait'll retail learns to read this week!" and "Complete loss of sanity…who deemed you people fit for operating public markets?" — bearish derision aimed at dip-buyers.
+- `@Warrengees`, `@Stay_Woke`, `@Popebeetlejuice`, `@ChillerID`, `@GlobalTradersAcademy`, `@HeroicJobCreator`, `@GOST`, `@StarLord13`, `@LoneBroker`, `@ZACHERY2021` — ticker spam, politics, Ukraine/ceasefire side-debate, QRL anniversary, or mockery. **No directional content.** Roughly 10 of 30 messages (~33%) carry no BTC signal at all.
 
----
-
-### 2. Cross-source divergences and alignments
-
-There is **no cross-source divergence to report, because there are not two sources to diverge.** Of the three intended inputs:
-- News: silent (or broken)
-- StockTwits: hard-failed
-- Reddit: two tangential posts
-
-The only **alignment** worth noting is soft: the `r/wallstreetbets` GLXY thread asserts crypto had a "strong quarter," and the news feed carried no countervailing negative event — a **weakly consistent, mutually non-contradicting pair**. That is the full extent of the signal. Critically, the classic pattern this framework is designed to catch — retail wildly bullish into cautious institutional headlines (or vice versa) — **cannot be tested at all** this week, because the retail ratio source is dead.
-
-Notably, the **absence** of `BTC-USD` mentions in `r/stocks` and `r/investing` is itself mildly informative: crypto is not currently a *mainstream equity-investor* preoccupation in these communities, consistent with a non-euphoric, non-panicked backdrop rather than a mania. But zero posts is a weak instrument for that claim.
-
----
-
-### 3. Dominant narrative themes
-
-With a near-empty corpus, I am deliberately **not** manufacturing a dominant narrative. What can be honestly extracted:
-
-1. **"Crypto had a strong quarter, but equities with crypto exposure aren't reflecting it"** — the `r/wallstreetbets` GLXY post is the cleanest articulation: treasury-gain mechanics (BTC/ETH/SOL holdings) expected to show up in results, yet the share price is confounding the poster. This is a **second-derivative, equities-expression narrative**, not a spot-`BTC-USD` sentiment narrative.
-2. **Anti-Wall Street / reflexivity cynicism** — the 2026-10-08 post mocks the hedging industry for risking its own compensation. Crypto retail's traditional distrust of institutional Wall Street framing ("Wall Street is the thing crypto exists to escape" / "Wall Street is now in crypto and will get wrecked") persists as an ambient theme, but it is **tonally bearish on institutions, not on BTC**.
-3. **Conspicuous absence of the usual themes** — no ETF-flow chatter, no halving-cycle talk, no macro/liquidity debate, no regulatory headline, no stablecoin/depeg scare, no large-liquidation event. In a normal week for `BTC-USD`, at least one of these dominates. Their absence is the loudest thing in this dataset, and it most plausibly reflects **source failure rather than a genuinely eventless market**.
+### C. Reddit (r/wallstreetbets, r/stocks, r/investing) — **2 posts, engagement data unavailable**
+- `[2026-10-15]` r/wallstreetbets: **"All in on btc/MSTR, essentially all my liquid assets"** — body: *"I went through the memory ringer and ate my losses last week, while sitting on the cash I decided I could throw it all in on bitcoin and hope it returns to ATH at some point to double my money."* This is textbook **capitulation-then-immediate-re-leverage**. The word "hope" and the ATH-recovery thesis define the trade. Historically this behavior marks mid-to-late drawdowns, not bottoms — and is a **contrarian warning**, not confirmation of demand.
+- `[2026-10-13]` r/wallstreetbets: **"$30k margin on this position..."** — 492 MSTR shares at $139 avg, margin added at $100 and $120, target **MSTR $500 / BTC $250k / 2-year horizon**. Note the price path implied: the poster bought at $139 and averaged into $100–$120 — MSTR (a ~2x BTC beta proxy) had already fallen ~30% from their entry. A margin-funded, 2-year, +200%-BTC-target position is a **leverage/forced-selling risk datapoint**, not a sentiment datapoint about near-term direction.
+- **r/stocks: no posts found. r/investing: no posts found.** Explicit silence on the two more measured subreddits — no longer-term holder discussion surfaced at all, which is itself notable: the debate is happening exclusively in the degen/leverage venue.
+- **Scores and comment counts are unavailable** for both posts, so best-practice #3 (weight by engagement) cannot be applied. Both items are unweightable and could be low-engagement noise. Small-sample caveat is emphatic.
 
 ---
 
-### 4. Catalysts and risks surfaced by the data
+## 2. Cross-source divergences and alignments
 
-**Catalysts (weak, indirectly inferred):**
-- **Crypto-exposed equity reporting** (e.g., GLXY and peers with BTC/ETH/SOL treasuries) — the one live thread. If Q3/Q4 treasury gains land as the `r/wallstreetbets` poster expects, it could generate positive read-through *coverage* of BTC exposure, which in turn feeds sentiment back into `BTC-USD`. **Watch crypto-treasury equities as a proxy sentiment channel this cycle.**
-- **AI/data-center infrastructure buildout** (Helios/AI mentioned in the same post) — a second-order theme: crypto-adjacent capital is increasingly entangled with AI infrastructure, and that linkage can attract non-crypto-native capital and attention.
+**Divergence 1 — Labeled sentiment (balanced 6/5) vs. textual sentiment (clearly bearish-leaning).** The tag ratio says "uncertainty"; the *words* say "$81K broke again," "$77–78K next," "$60K," "black Monday," "midterm selloff," "no convincing reason to hold." Resolution: tags are casually applied here (one Bullish tag is sarcasm, one is a bare ticker, and the 63% unlabeled bucket hides most of the bearish substance). **Weight the text over the tags.**
 
-**Risks:**
-- **Total information blindness.** The largest risk in this report is *analytical*, not market: with news and StockTwits both dark, an unobserved negative event (exchange failure, regulatory action, macro shock, liquidation cascade) inside 2026-10-03 → 2026-10-10 would be **invisible to this pipeline**. Do not read this report's neutrality as "nothing happened."
-- **Watchdog failure on over-extension.** Without the StockTwits ratio, the framework's primary *contrarian* safeguard (spotting ≥90/10 one-sided retail euphoria at a top) is inoperative. A trader relying on this report gets no over-extension warning this week.
-- **Equity-side disappointment spillover.** The GLXY thread is a sentiment of *frustration* — crypto strength not translating to equity performance. If that mismatch persists, it can curdle into "crypto's gains aren't real / aren't monetizable" skepticism, a mild headwind to narrative momentum.
+**Divergence 2 — r/wallstreetbets aggressive longs vs. StockTwits level-break fear.** Same underlying asset, opposite postures, same day-ish window. This is the classic split between *position holders rationalizing* (WSB, already down and re-leveraging on margin) and *tape watchers reacting to structure* (StockTwits, marking broken supports). In a drawdown, the WSB cohort is usually the more lagging signal — the information content is in the people calling levels, not the people defending bags.
+
+**Alignment — no source supports a bullish thesis with evidence.** Not one of the 30 StockTwits messages or 2 Reddit posts cites an inflow data point, ETF news, adoption event, halving/macro catalyst, or technical reclaim. Bullishness is entirely composed of (a) contrarian fear readings, (b) fib targets, (c) deferred-hope ("tomorrow," "next month when GTA 6 comes out," "2 years"). **Absence of a bullish catalyst is a signal in itself.**
+
+**Structural note — the $MSTR/$MSTZ cluster.** MSTR appears in 6+ messages plus both Reddit posts; an inverse ETF ($MSTZ) is explicitly pitched. BTC-USD sentiment in this window is being *transmitted through a leveraged equity proxy*, which amplifies both the bearish tail (margin/forced selling) and any reflex bounce.
 
 ---
 
-### 5. Summary table — key sentiment signals
+## 3. Dominant narrative themes
+
+1. **"$81K broke again" — failed reclaim / lower-high structure.** The single most repeated concrete claim. Spot is implied to be sitting in the low-$80Ks after losing $81K, with $80K as the trigger line, $77–78K as the next support shelf, and $60K as the tail scenario. This is the spine of the bearish case.
+2. **Macro-pessimism / "midterm selloff."** Rates, mounting debt, tightening financial conditions, geopolitical tension (Ukraine ceasefire credibility debated in-thread), and a specifically political catalyst — the **November 2026 US midterms** — are cited as the driver of further downside. Notably `@NotFinancialAdviceDummy` frames BTC as a "major participant" in that selloff, i.e. high-beta risk asset, not digital gold.
+3. **"Extreme fear" as both description and bull case.** Whether the crowd is "more bearish than at $60K" is the pivot of the debate. Bulls use it as a contrarian entry; bears read it as justified.
+4. **Capitulation-and-re-leverage.** Both Reddit posts and multiple StockTwits replies are people who already ate losses and are re-entering — all-in liquid assets, $30k margin, 2-year horizons. The behavioral signature of a drawdown that has hurt people but not yet exhausted them.
+5. **AI/datacenter power as a background macro thread.** The bare-link dumps (Meta nuclear, Google–Constellation 890MW PJM) are tangential to BTC price but relevant to the miner/AI-power adjacency narrative — included here only because they dominate one user's output and inflate the unlabeled count.
+
+---
+
+## 4. Catalysts and risks surfaced by the data
+
+| Type | Item | Direction | Evidence |
+|---|---|---|---|
+| Technical catalyst | Reclaim/hold of **$80–81K** | Bullish trigger | `@HereForFunsies` bounce-above-80-81 plan; `@Michael_Seller_BEAR` notes repeated $81K failure |
+| Technical risk | Breakdown below **$77–78K** | Bearish trigger | `@NatoshiSakamato` "get ugly if it breaks down $77K-$78K"; `@Fawl3r` "breaks $80K… real nasty" |
+| Tail risk | Retest of **$60K** cycle area | Bearish | `@dontstarvebulls` "60k"; `@BullTrade9` references the $60K era as the prior fear benchmark |
+| Macro catalyst | **US midterms (Nov 2026)** as risk-off event | Bearish | `@NotFinancialAdviceDummy` "Bitcoin will be a major participant in the midterm selloff" |
+| Macro risk | Rates / debt / tightening conditions / geopolitics (Ukraine) | Bearish | `@Utreggg` full macro bear case; `@StarLord13` Ukraine thread |
+| Contagion risk | **MSTR leverage & forced selling**; inverse ETF ($MSTZ) pitched | Bearish (amplifier) | Reddit $30k margin post at $139 avg vs $100–$120 adds; `$MSTZ` mentions |
+| Contrarian fuel | **"Extreme fear" reading / bears outnumbering the $60K era** | Bullish (contrarian) | `@Bullshyte`, `@BullTrade9` |
+| Upside target | **$85K** fib, then ATH-recovery ($250K long-horizon) | Bullish | `@johnnyrivers0110`; Reddit 2-year BTC $250k target |
+| Data gap | **Zero news flow** — no institutional framing, no verified catalyst | Neutral/uncertainty | Yahoo placeholder |
+
+**Not surfaced anywhere in the data:** ETF flow data, on-chain metrics, regulatory action, exchange events, halving/supply narratives, or options/funding positioning. The absence of *any* fundamental or flow anchor means this sentiment read must be paired with technicals and flow data before acting.
+
+---
+
+## 5. Sentiment signal summary
 
 | Signal | Direction | Source | Supporting evidence |
 |---|---|---|---|
-| Institutional/news framing for `BTC-USD` | **None (no signal)** | Yahoo Finance news | Feed returned `No news found for BTC-USD` — treat as data gap, not calm; BTC is normally heavily covered |
-| Retail bull/bear ratio (leading indicator) | **None (unavailable)** | StockTwits | `HTTPError` placeholder — no ratio, no message count, no over-extension test possible |
-| Crypto quarter-strength assertion | **Mildly Bullish** | r/wallstreetbets (2026-10-06, GLXY thread) | *"Crypto has had a strong quarter, GLXY has huge exposure to BTC/ETH/SOL and the treasury gains should be significant"* |
-| Equity-vs-crypto divergence frustration | **Mixed / mildly bearish on expression, bullish on crypto** | r/wallstreetbets (2026-10-06) | Poster is confused the stock isn't reflecting crypto strength — implies positive crypto read, negative equity read |
-| Anti-Wall Street / institutional cynicism | **Neutral for BTC** (bearish on institutions) | r/wallstreetbets (2026-10-08) | *"the industry that is entirely based on hedging risk (Wall Street)… risks their whole salary lol"* — tone, not thesis; no directional BTC content |
-| Mainstream equity-investor attention on BTC | **Neutral / low attention** | r/stocks, r/investing | Zero posts mentioning BTC in the past 7 days — no mania, no panic, but also a weak instrument |
-| Engagement weighting of Reddit evidence | **Unverifiable** | Reddit (RSS) | Scores/comment counts unavailable — cannot distinguish a front-page thread from noise |
+| Labeled bull/bear ratio 6:5 (20%/17%) | Neutral / uncertain | StockTwits | 30 msgs, 63% unlabeled; below the 70/30 threshold for a bullish read |
+| Textual tone of unlabeled bucket | Bearish | StockTwits | "$81K broke again," "$77–78K gets ugly," "midterm selloff," "no convincing reason to hold" |
+| Bullish cohort composition | Weak / low-conviction bullish | StockTwits | "Extreme fear = buy!", "buy time for tomorrow," one sarcastic Bullish tag, one bare ticker |
+| Contrarian fear extreme | Mildly bullish (contrarian) | StockTwits | "I didn't even see this many bears when BTC was 60k"; "Extreme fear" cited repeatedly |
+| Retail leverage / bag-holding behavior | Bearish (contrarian warning) | r/wallstreetbets | All-in liquid assets after eating losses; $30k margin, MSTR $139 avg, BTC $250K 2-yr target |
+| Institutional / event framing | Unavailable — no signal | Yahoo Finance | Placeholder: "No news found for BTC-USD" |
+| Measured-community discussion | Silent | r/stocks, r/investing | No posts mentioning BTC in 7 days — debate confined to degen venue |
+| Cross-source divergence | Mixed, resolving bearish | StockTwits vs Reddit | Tape-watchers marking support breaks vs. holders re-leveraging on hope |
+| Leveraged-proxy transmission | Bearish amplifier | StockTwits + Reddit | MSTR/$MSTZ cluster across both venues; margin adds at $100–$120 vs $139 cost |
 
 ---
 
-### Bottom line for the trader
+## 6. Data quality and framing
 
-`BTC-USD` sentiment for 2026-10-03 → 2026-10-10 is **unknowable with meaningful precision**. Two of three sources failed (news returned nothing, StockTwits errored outright) and the third delivered two tangential, engagement-blind posts — one of which is the only mildly constructive crypto datapoint in the entire set. There is **no bearish evidence and no verifiable bullish evidence**; there is mostly **absence of data**. I therefore score this **Neutral (5.0/10)** rather than leaning either way — calling it Mildly Bullish off a single unscoreable Reddit post would be over-reading noise, and calling it Bearish has no support whatsoever.
+- **Confidence: LOW.** One of three sources returned a placeholder (news), Reddit returned 2 posts with **no engagement metrics** and total silence from the two calibrated subreddits, and the StockTwits sample is 30 messages of which ~33% carry no BTC content and ~20% come from a single account. Effective independent directional sample ≈ 15–20 messages. No statistically meaningful ratio can be computed.
+- **The band is Mildly Bearish, not Bearish** precisely because the labeled meter is 50/50 and there is a real contrarian bull flank ("bears worse than at $60K," "extreme fear = buy"). It is **not Neutral**, because every substantive, level-specific, and macro-specific argument in the sample points down, and because the clearest bullish behavior in the data is margin-funded hope rather than demand.
+- **Past sentiment is not predictive.** This is a positioning/framing input to be weighed against price structure ($80–81K / $77–78K are the lines that matter), net flows, and funding/leverage data — none of which were available here. **Score 4.2/10** reflects a fear-driven, support-broken tape with retail dip-buying — a setup where the crowd is leaning against the tape rather than with it.
 
-**Confidence: LOW.** Per the stated rules, one source returned a placeholder (`HTTPError`), another returned an empty set, and the surviving source provided fewer than 5 data points with no engagement metrics — any one of those conditions alone justifies low confidence, and all three apply simultaneously.
-
-**Practical guidance:** weigh this as *no new sentiment information* rather than as a neutral-to-positive read, and source `BTC-USD` sentiment independently (exchange funding rates, options skew, ETF flow data, live StockTwits/cashtag pulls) before acting. Do not treat the near-silence as a calm-market signal — it is far more likely a pipeline failure than a genuinely eventless week for Bitcoin.
+**FINAL TRANSACTION PROPOSAL: HOLD** (sentiment-confidence low; no directional edge strong enough to justify a new position from sentiment alone — defer to technicals for the $80–81K resolution.)

@@ -1,11 +1,11 @@
 **Action**: Sell
 
-**Reasoning**: The plan's Underweight call maps to reducing exposure: the primary trend is intact (price ~15% above a rising 200 SMA at $71,918, bullish MA stack, RSI reset to ~51 without breaking trend, thin crash tail) which argues against a full exit, but the tradeable horizon has clearly deteriorated. BTC-USD trades below its 10 EMA ($83,608), VWMA ($84,100), and Bollinger middle ($84,373) with a widening negative MACD histogram, amid a pointed macro headwind (10Y 5.22%, Fed funds 3.75%, core PCE +2.59%, oil $103) that raises the opportunity cost of a zero-yield asset. Decisively, buying at $82,912 with a stop below $80,336 offers under 1.5:1 R/R and sits inside a single ATR (~$2,094), making entries whipsaw-prone — so trim into strength rather than add.
+**Reasoning**: The plan is net Underweight and near-term evidence is decisively bearish: BTC-USD at $81,382 is below the 10EMA for eight sessions, below the VWMA ($83,032) and Bollinger mid ($83,408) for 10 of 11 sessions, momentum is decaying (MACD spread ~-96.7%, near a zero-line cross), and a rising real-yield backdrop (~2.73%, +104bp since April) is the wrong regime for a zero-yield long-duration asset. The bull's asymmetry collapsed under scrutiny — the $79,736 stop is only ~0.77 ATR (ATR 2.62%), inside the noise band, cutting the trade to ~1.9:1 rather than 3:1, so there is no case to add here. But with the 200SMA ($72,425) rising and the golden cross intact, this is a controlled trim into strength, not an outright short or full exit — retain a reduced core and let the triggers decide. Trim into the $82.3K-$83.4K resistance shelf rather than forcing sales at the $81K support; a daily close above $83,408 on 35B+ volume reverses to re-add, while a break below $79,736 (Oct 15 low) exits the remainder.
 
-**Entry Price**: 86480.0
+**Entry Price**: 83000.0
 
-**Stop Loss**: 80336.0
+**Stop Loss**: 79736.0
 
-**Position Sizing**: Reduce to below benchmark weight; keep residual core modest. With ATR ~$2,094 (~2.5% of price), size so a 2.5% adverse day is within tolerance; prefer wider stops / smaller size or defined-risk structures (protective puts) over a naked stop near $80,336.
+**Position Sizing**: Trim 25-40% of current BTC-USD position into the $82.3K-$83.4K shelf; retain a reduced core at ~1/2 to 2/3 of normal size; flatten any leverage. Full structural exit of remainder only on a break of the 200SMA ($72,425).
 
 FINAL TRANSACTION PROPOSAL: **SELL**
