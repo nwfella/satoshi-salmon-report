@@ -1,132 +1,189 @@
 
-Bear Analyst: ## BTC-USD — The Bear Case: You’re Not Buying a “Discount,” You’re Buying a Failing 50SMA Test
+Bear Analyst: Bull, I’ll give you the one point you’ve earned: **shorting the exact low with a tight stop is poor execution.** But you’re conflating “bad entry” with “bad direction.” The investment case for **BTC-USD** is deteriorating, and the right stance is **reduce/underweight**, not “upgrade to BUY” because the 200-SMA is rising.
 
-Let me be direct with you: your bull case is well-constructed, but it hinges on one dangerous assumption — that because the long-term trend is intact, the current short-term breakdown should be bought. That is not analysis; that is hope with a moving-average overlay. The evidence on BTC-USD says the opposite: the market is sitting on a tripwire, momentum is rolling over, volume is not confirming accumulation, and the macro tape is hostile to a zero-yield, long-duration asset.
-
-You say I’m “fighting the last 6%.” No — you’re trying to front-run the first 6% of a trend break. Let’s debate the actual data.
+Let’s go through your case line by line.
 
 ---
 
-## 1. The 50SMA Is Not a “Floor” — It’s a Coin Flip
+## 1. Your 4.5:1 reward/risk is a 44% hope target, not a trade
 
-You keep saying BTC-USD is “defended” at the 50SMA because the close is **$81,382.15 vs. the 50SMA at $81,322.90** — a grand total of **+$59.25, or +0.07%**. That is not defense. That is price sitting exactly on the line, with no verified bounce, no volume-confirmed reclaim, and no momentum improvement.
+You keep quoting **4.5:1** using the **52-week high of $116,273.31** as the objective and the **200-SMA at $72,900.84** as the stop. That’s not a near-term trade map. That’s holding through a Fed hike cycle, a 2.64% real yield, and every resistance level between here and there.
 
-You call the 50SMA a rising floor. I call it a rising tripwire. The 50SMA has climbed roughly **$18K in three months** to $81,322.90. A fast-rising 50SMA pressing into price while short-term momentum is negative is not automatically bullish — it compresses the decision window. Either BTC-USD stabilizes here, or it breaks from below with MACD already negative and the 10EMA declining.
+Look at the actual ladder:
 
-And your “long-term trend is intact” argument is true but strategically misleading. The 200SMA is at **$72,425.69** — roughly **11% below spot**. So yes, the bull structure is intact until $72.4K. But that is not a reason to buy at $81.4K. It is a reason to respect that a break of the 50SMA has a long, empty runway below it.
+- **$81,800–$82,544**: 50-SMA, 10-EMA, VWMA, Bollinger mid — one overhead cluster.
+- **$84,840**: prior high.
+- **$86,480–$87,363**: October rejection zone.
+- **$90k**: prediction markets say only **44%** by year-end.
+- **New ATH by Dec 31, 2026: 5%.**
 
-You cite the golden cross since **2026-09-08** and the 50SMA sitting **$8,897 above** the 200SMA. That is a lagging confirmation of a move that already happened. Since the September 21 high, BTC-USD has made a lower high at **$87,146.35 vs. $87,363.76**, and has fallen **−6.0%**. The golden cross did not protect buyers from that. It won’t protect them if $80,345 breaks.
+So your “4.5:1” requires BTC to grind through four supply layers while the macro regime is re-hiking. That’s not asymmetry. That’s a lottery ticket with a 44% sticker price.
 
----
+And your own prediction markets contradict the bull target:
 
-## 2. Your “Decaying Momentum” Argument Cuts Against You
+- **P(BTC dips to $77,500 before Oct 31) = 50%**
+- **P(BTC reaches $87,500 in October) = 8%**
+- **P(BTC reaches $90,000 in October) = 4%**
 
-You say the MACD histogram has stopped accelerating because it has been pinned between roughly **−495 and −585** for ten sessions. Fine. But stabilization in negative territory is not a buy signal. It is what happens before the next leg — or before a zero-line break.
-
-Look at the actual MACD line: **81.51 vs. signal 608.28**, histogram **−526.78**. The bearish cross has been in place since **2026-09-29**. The MACD line has decayed from **2,486.05** to **81.51** — a **−96.7%** collapse in momentum spread while price fell only about **6%**. And the MACD line is only **81.5 points above zero** with a roughly **−255/day** slope. If BTC-USD cannot reclaim the low-$82,000s quickly, a zero-line cross is mechanically close.
-
-That matters because a zero cross would align the short-term and medium-term momentum signals bearish. You’re treating “not yet crossed zero” as bullish. I’m treating it as a warning that the correction is not finished.
-
-And RSI? **46.07**. You call that a “coiled spring.” I call it neutral. There are roughly 16 points of downside before oversold becomes a constraint. In a genuine trend break, RSI can travel to the mid-30s without the price structure improving. “It’s down, so buy” is not a mean-reversion edge here.
-
----
-
-## 3. Price Is Below the Real Overhead Supply — Volume Says Bulls Are Absent
-
-You say selling volume is dying. I agree — but dying selling volume is not the same as accumulation. The sequence you cite — **46.2B on 10/08 → 41.9B on 10/15 → 26.6B on 10/16 → 11.5B on 10/17** — is a low-conviction drift lower, but it is also a tape with no high-volume up day reclaiming the 10EMA.
-
-That is the problem. There is no accumulation signal. The **VWMA is $83,032.73**, which is **1.99% above spot**. That means the volume-weighted transacted price is overhead. Buyers in the $83K–$84.7K zone are underwater. Until BTC-USD reclaims the VWMA and the Bollinger mid at **$83,407.61** on expanding volume, the overhead supply is real.
-
-You cite the October 15 wick: low **$79,735.86**, close **$82,141.46**. Yes, buyers rejected that intraday break. But one rejection wick is not a confirmed floor. Price is now back at the 50SMA, below the 10EMA for eight consecutive sessions, and below the Bollinger mid for ten of the last eleven sessions. That is not a floor being built; it is a range being compressed into a decision.
-
-The bull claim that “sellers are exhausted” also conveniently ignores the data caveat: the 10/17 volume print is likely a partial session. If you use the caveat to dismiss “no accumulation,” you cannot simultaneously use the same volume series to declare “seller exhaustion.” The volume evidence is neutral at best — and neutral volume under overhead supply does not justify adding.
+That’s roughly a **6:1 downside-to-upside skew** on the near-dated market. The market is not pricing your 4.5:1 recovery. It’s pricing a retest of the $77.5k shelf.
 
 ---
 
-## 4. Your 3:1 Asymmetry Is Mathematically Fragile
+## 2. You say the macro bear case is “priced.” It’s the regime.
 
-This is the most important counterpoint. You claim the trade from $81,382 is 3:1 because the stop is at $79,736 and the target is $86,470–$87,364. But the stop you’re using is only **0.77 ATR** below spot. ATR is **2,133.26**, or **2.62% of spot**. A 0.77-ATR stop in BTC-USD is inside the noise band. You will get stopped by ordinary volatility, not by a trend invalidation.
+I agree the **10Y TIPS real yield at 2.64%, +91bp YoY** is the strongest bear card. But you’re treating it as old news when it’s the binding constraint.
 
-If we use a structurally robust stop near **$78,182** — roughly 1.5 ATR below spot — the downside is about **−3.9%**. Against a target of $87,364, the upside is about **+7.3%**. That is closer to **1.9:1**, not 3:1. And that is before accounting for probability. You are assigning the upside target as if it is the base case, while ignoring that every short-term indicator says the path there is contested.
+The Fed didn’t just stop cutting. It **hiked in September 2026**. Markets now price:
 
-This is why your “accumulate in tranches” playbook is riskier than it sounds. Tranche 1 at $81.3K is not a 2% risk trade; it is a trade where the obvious stop is likely to be triggered by a normal daily range. In crypto, that stop can gap. The asymmetry is not nearly as favorable as you present.
+- **No Fed cuts in 2026: 96%**
+- **Another hike in 2026: 76%**
+- **Two hikes in 2026: 72%, up +4.5pp w/w**
+- **Dec 9 hike: 76%**
 
----
+Meanwhile:
 
-## 5. The Macro Backdrop Is Not “Priced” — It Is a Process
+- **CPI +0.65% MoM in September**, ~8% annualized, **+3.46% YoY**
+- **Core PCE +2.59% YoY**
+- **Unemployment 4.2%**
+- **Real GDP +2.19% YoY**
 
-You argue the macro bad news is consensus and therefore priced. That is one of the weakest arguments in the bull case. “Priced” does not mean “finished.” Rising real yields are a process, not an event.
+That’s not a recession bid. That’s a “no landing, inflation re-accelerating, Fed hikes” regime — the worst possible macro mix for a zero-cashflow, long-duration asset like **BTC-USD**.
 
-The key number is the **10-year real yield at roughly 2.73%**, up from about **1.69% in April** — a ~104bp tightening in real terms. Nominal 10-year yields are **5.10%**, after peaking at **5.31% on October 5**, the highest since 2002. Five-year breakevens have actually _fallen_ from 2.57% to **2.37%**. That tells you this is not an inflation-expectation shock. It is a real-yield and term-premium shock.
+And your “Oct 22 yield relief” point is weaker than you think. Yes, the 10Y fell **5.13% → 4.96%** and TIPS **2.76% → 2.64%**. And BTC still failed to rally. You call that a 48-hour sample. Fine — but combine it with:
 
-That is precisely the wrong backdrop for BTC-USD. BTC-USD produces no cash flow. It is the purest long-duration asset in the market. When the risk-free real yield is 2.73%, the opportunity cost of holding a non-yielding asset is high and rising. The “digital gold” bid is absent — and the data proves it, because breakevens are falling while yields rise.
+- price below the 50-SMA,
+- below the 10-EMA,
+- below VWMA,
+- below Bollinger mid,
+- MACD through zero,
+- RSI below 50 and falling.
 
-You point to the October 29 FOMC hold probability at **86%** as a potential relief catalyst. But a hold is the baseline. It is already in the price. The risk is asymmetric: if the Fed hikes, it is a shock; if the Fed holds, the relief bounce may simply be sold into the $83K–$84K supply shelf. Meanwhile, the December 9 meeting prices **76% odds of +25bp**, and the market prices **97% odds of no cuts in 2026** and **78% odds of another hike this year**. That is not a friendly policy path.
-
-You also cite low VIX at **16.46** as evidence there is no panic. Correct — and that is bearish, not bullish. There is no fear-driven Fed put, no flight-to-quality bid for crypto, and no recession forcing rate cuts. The economy is not cracking: unemployment **4.2%**, GDP roughly **+2.4% annualized**, recession odds only **8%**. That means no obvious catalyst for the liquidity wave you are waiting for.
-
-And if risk-off does arrive? BTC-USD is more likely to be sold for liquidity than bought as a hedge. The strong dollar at **121.60**, up **2.85% since April**, is another mechanical headwind.
-
----
-
-## 6. Scarcity Is Not a Price Floor
-
-You keep returning to the 21 million cap and the 2028 halving. I understand the appeal, but scarcity does not prevent drawdowns. BTC-USD is **−29.9% from its 52-week high of $116,273.31**, and the market cap has fallen by roughly **$694 billion** from the peak. That is what “hard cap” looked like on the way down.
-
-The supply inflation rate is about **0.82% annually**, which is low but not zero. Miners are natural sellers. The next halving is in **2028** — that is not a near-term catalyst. And because BTC-USD has no cash flows, no earnings, and no legal claim on productive assets, there is no valuation anchor to tell you when it is “cheap.” The price is driven by flows, leverage, liquidity, and sentiment. None of those are confirmed bullish right now.
-
-You say the 52-week high is **+42.9% away**. True. But the 52-week low is **−29.2% away**, and a break of $74K opens the **$68K–$70K** zone and then **$60K**. The downside tail is not theoretical. Year-end prediction markets still assign **10% to BTC-USD below $55K** and **8% below $50K**. Those are not round-off errors.
-
-And you cannot ignore opportunity cost. With T-bills and short-duration yields near 5%, BTC-USD has to offer a compelling expected return to justify its volatility. A coin-flip probability of being above $90K by year-end is not enough when the path includes a 2.62% daily ATR and a real-yield headwind.
+A market that cannot rally on a 12–17bp yield relief is not “coiling.” It’s showing weak demand.
 
 ---
 
-## 7. Sentiment Is Not a Contrarian Buy Signal Here
+## 3. Your technicals lean on a lagging line while the active tape is bearish
 
-Your sentiment argument is the most overstated part of the bull case. The report scores **4.2/10, “Mildly Bearish,” with LOW confidence**. That is not a screaming capitulation bottom. It is a fear-driven tape with retail dip-buying and no institutional framing.
+You keep pointing to the **200-SMA at $72,900.84** and saying it’s rising $95/day. I agree. But the 200-SMA is the last line of defense, not a buy signal.
 
-The labeled StockTwits ratio is **6 bullish / 5 bearish** — a coin flip, not a directional signal. About **63%** of messages are unlabeled, and **20%** come from a single account. The substantive posts are overwhelmingly level-based and bearish: “$81K broke again,” “$77K–$78K gets ugly,” “60K,” “midterm selloff.” The bullish posts are mostly hope, sarcasm, or bare tickers: “Extreme fear = buy,” “buy time for tomorrow,” “uptober sucks.”
+Here’s what the active tape says:
 
-And the Reddit data is not “demand with conviction.” It is **capitulation followed by re-leverage**. One poster went all-in on BTC/MSTR after eating losses and hopes to “double my money” back to the ATH. Another is running **$30K margin** on MSTR at a **$139 average**, adding at **$100–$120**. That is exactly the behavior that marks a market that has hurt people but not exhausted them. It is a forced-selling risk, not a bottom signal.
+| Indicator | Reading | Message |
+|---|---|---|
+| Close | **$80,790.84** | Lowest close in 30 sessions |
+| 10-EMA | **$81,912.01** | Price below, short-term bearish |
+| 50-SMA | **$81,800.72** | Lost on 2026-10-22; first close below in 90 sessions |
+| VWMA | **$82,114.28** | Price 1.61% below — overhead supply |
+| Bollinger mid | **$82,544.00** | Price 2.12% below |
+| MACD | **−180.18 vs signal +107.67** | First zero-line break in 60 sessions |
+| RSI | **44.21** | Below 50, not oversold, no bullish divergence |
+| %B | **~0.18** | Bottom 18% of envelope |
 
-You also treat the “no news” data gap as neutral. I don’t. There is no ETF flow data, no on-chain data, no funding data, and no institutional catalyst in the window. The bullish case is being argued without a single verified positive flow datapoint. Absence of a bullish catalyst in a tape that is below the 10EMA, below the VWMA, and below the Bollinger mid is not a reason to buy.
+You call the 200-SMA “accelerating.” But a rising 200-SMA into a price that is losing the 10/50/VWMA cluster is what a **failed breakout** looks like. The golden cross is mature — **50/200 spread +12.2%**. That spread can normalize by the 50-SMA rolling over, not by BTC rallying 44%.
+
+And your “22% retracement” argument cuts against you. A 38–61% retracement of the July–September impulse is completely normal. The **50% retracement is $72,555.77** — almost exactly the 200-SMA. So the very line you say is 9.8% below us is also the natural downside retracement target. That’s not a bull invalidation line. That’s the bear’s magnet.
 
 ---
 
-## 8. The Market’s Own Pricing Does Not Save the Bull Case
+## 4. Low-volume breakdown is not “sellers exhausted.” It’s no bid.
 
-You cite the year-end median near **$90,000** and **50% odds of BTC-USD above $90K**. But look at the change: that $90K contract fell **18.5 percentage points in one week** on only **$2.4 million** of volume. You yourself called it “thin and unstable.” A thin market repricing is not a structural endorsement.
+You argue the declining volume means sellers ran out of ammunition. I’d argue it means **buyers never showed up**.
 
-Also, a 50% probability of being above $90K is a coin flip, not an edge. The market also prices **20% above $100K**, **4% for a new ATH**, and **10% below $55K**. The distribution is wide, and the near-term floor above $74K is only a one-week probability — **3% by October 22**. That does not tell you the trend is safe; it tells you the market does not expect an immediate cascade. It says nothing about the next three months if the 50SMA fails.
+- 2026-10-22: **−3.21% on 33.45B** — a genuine distribution day.
+- 2026-10-23: **23.49B**
+- 2026-10-24: **21.27B**, roughly **22% below the 30-day mean**
 
-And on the ETH relative-strength argument: BTC-USD falling less than ETH is not a bullish thesis. In a liquidity flush, correlations go to one. ETH weakness is a warning about the entire crypto complex — leverage, collateral, and risk appetite. “Best house in a bad neighborhood” is still a bad neighborhood. BTC-USD is down nearly 30% from its high; relative strength has not prevented losses.
+True capitulation lows in this dataset printed **125.5B** on 2026-02-05 and **129.2B** on 2025-11-21. Today’s volume is a sixth of that. So yes — there is no capitulation. But that’s not bullish. It means the market is bleeding lower without a washout, which leaves room for more downside.
+
+A low-volume drift below support is often **absence of demand**, not accumulation. The fact that the break to a five-week low happened on shrinking volume is not a bottom signal. It’s a warning that there is no institutional bid underneath.
 
 ---
 
-## 9. The Bear Playbook for BTC-USD
+## 5. Flat ATR is not a coiled spring upward
 
-I am not arguing for blindly shorting a rising 200SMA. I am arguing against adding, against treating the 50SMA as a floor, and against the idea that the risk/reward is strongly bullish here. The bear stance is **underweight / sell rallies / protect capital**, with defined triggers.
+You’re inferring a bullish squeeze from flat ATR and collapsed Bollinger width. But the bias is set by price location:
 
-**Resistance stack — where bulls must prove it:**
-- **$82,346.76** — 10EMA. Price has closed below it for eight sessions.
-- **$83,032.73** — VWMA. Overhead supply.
-- **$83,407.61** — Bollinger mid. The regime line.
-- **$86,469.80** — Bollinger upper.
-- **$87,146.35 / $87,363.76** — lower high / cycle high.
+- Price is **on the lower Bollinger band**, not the mid.
+- Price is below the 50-SMA and 10-EMA.
+- MACD is negative and the histogram re-widened to **−287.85** after briefly narrowing.
+- RSI is **44**, not 30 — there’s no washout, no reversal signal.
 
-Until BTC-USD closes above **$83,408** on **35B+ volume**, the bull case is unconfirmed. A close above the 10EMA alone is not enough.
+ATR at **$2,112** means one normal day can tag **$82,500**, sure. But an intraday tag is not a daily close. You said the bear case is void above **$82,544**. I’d say that’s far too tight. A single ATR can spike through that level and close back below. The real bear-case invalidation is higher — **$84,840**, and more decisively **$87,500**.
 
-**Support and bear triggers:**
-- **$81,322.90** — 50SMA. A daily close below this is the first crack.
-- **$80,345.42** — Bollinger lower. Two consecutive closes below here, especially with MACD below zero, confirms the bear scenario.
-- **$79,735.86** — October 15 low. A close below this is the objective signal to step aside.
-- **$77,000–$77,500** — August/September shelf.
-- **$72,425.69** — 200SMA. If this breaks, the long-term bull case is invalidated.
+You’re trying to use a 2.2% level as thesis-killer while acknowledging ATR is 2.6%. That’s not a trade construction; that’s a coin flip inside normal noise.
 
-**Risk management:** With ATR at **2.62% of spot**, position sizes should be half to one-third of normal. Stops tighter than about 8–10% around current price are likely to be noise-stopped. That is exactly why the bull’s “2% stop” is not as safe as it looks.
+---
 
-**Recommendation for BTC-USD:** **UNDERWEIGHT / AVOID NEW LONGS.** Existing holders should consider trimming or hedging into the **$82.3K–$83.4K** resistance zone. Do not add at the 50SMA simply because it is the 50SMA. Wait for a volume-confirmed reclaim of **$83,408** before even considering a more constructive stance — and even then, the macro real-yield headwind argues for smaller risk, not aggressive accumulation.
+## 6. Sentiment silence is not a bottom — it’s an absence of sponsorship
 
-The bull case says the trend is up, the floor is holding, and the crowd is scared. My response: the trend is up _until it isn’t_, the floor is a **0.07% cushion**, and the crowd is scared because the tape has already broken every short-term support that matters. That is not an opportunity you should chase — it is a risk you should manage.
+Your social report says **5.2/10, confidence LOW**, and explicitly concludes it is **“not a directional read.”** I agree. So stop using it as a bullish one.
 
-**Final bear stance on BTC-USD: UNDERWEIGHT / SELL RALLIES. Protect capital first; wait for proof, not hope.**
+What does the composition actually say?
+
+- **Yahoo Finance: zero headlines.** That’s a feed gap, not institutional silence.
+- **StockTwits: unavailable.**
+- **r/stocks and r/investing: no BTC-USD posts in 7 days.**
+- **r/wallstreetbets:** one McRib joke, one irony-laced “stacked to the tits” post, and one **−$268k 0DTE liquidation** post referencing a sharp Friday drop.
+
+You call that “capitulation psychology.” I call it **no substantive sponsorship**. The measured communities are not debating BTC. The only bullish commentary is meme-tier. That is not the foundation of a durable bottom — it’s a narrative vacuum with no catalyst.
+
+Froth shows up at highs. Silence can show up at lows — but silence alone is not a buy signal. It just means there’s no marginal buyer visible in the data.
+
+---
+
+## 7. Altcoin decay is deleveraging, not “rotation into BTC”
+
+You say ETH below $2,250 and HBAR −17%, XLM −14% is rotation into BTC. That’s a dangerous interpretation.
+
+In a liquidity drain, correlations go to one. BTC is not exempt. “Dominance” can rise while the whole complex falls. The point is not that BTC is weak relative to ETH; the point is that the entire crypto complex is losing capital.
+
+And your corporate-treasury point doesn’t save you. **P(another S&P 500 company buys Bitcoin by Dec 31) = 20%, −1.7pp w/w.** That marginal buyer is cooling, not accelerating.
+
+The macro tape agrees: **Dow and small caps up, Nasdaq down on AI-capex concerns.** That’s rotation out of high-beta, long-duration risk — exactly the bucket **BTC-USD** trades in. VIX at **19.03** is not a crisis, but it’s not a risk-on signal either.
+
+---
+
+## 8. The scoreboard is not 3-to-1 bullish. HOLD is not BUY.
+
+You say three of four research streams say HOLD or better. Let’s be precise:
+
+- **Technical report: HOLD.** It explicitly says no new exposure, no adding longs into weakness, and no initiating new shorts into a low-volume retest. That’s neutral-to-cautious, not bullish.
+- **Fundamentals report: HOLD.** It also says **“fundamental conviction is not establishable with this toolset”** and “asymmetry favors patient accumulation” only while **$72,900** holds. That’s conditional, not a BUY.
+- **Sentiment report: Mixed, confidence LOW, “not a directional read.”** That’s not bullish.
+- **Macro report: SELL.** And it’s the only stream with forward-looking market pricing: **6:1 near-term downside skew, year-end median below $90k, ATH odds 5%.**
+
+So the honest scoreboard is: **two neutral, one mixed/meaningless, one SELL.** That does not justify an upgrade to BUY. At best, it justifies not pressing a market short at the exact low. It does not justify owning **BTC-USD** here.
+
+---
+
+## 9. My bear trade construction — and why it’s better than chasing a bottom
+
+I’ll concede the execution point: don’t short blindly at $79.1k if the market is already oversold. But the investment stance remains **SELL / underweight**.
+
+Better expression:
+
+- **Core stance:** reduce/underweight **BTC-USD**.
+- **Tactical short trigger:** a failed bounce into **$81,800–$82,544**, or a daily close below **$79,145.54** with volume above **$27B**.
+- **Targets:** **$77,500 → $74,000 → $70,000**.
+- **Invalidation:** daily close above **$84,840** for tactical shorts; above **$88,500** for swing shorts.
+- **Do not add longs** unless BTC reclaims **$87,500** on volume or real yields break decisively below **2.35%** and December hike odds fall below **50%**.
+
+That’s a disciplined bear case. It doesn’t rely on catching the exact high. It relies on the macro regime, the failed momentum, the broken short-term structure, the absence of a bid, and the market-implied downside skew.
+
+---
+
+## Bottom line
+
+Bull, your case depends on three assumptions:
+
+1. The 200-SMA will hold because it’s rising.
+2. The macro headwind is already priced.
+3. Sentiment silence is a bottom.
+
+I don’t buy any of them. The 200-SMA is 9.8% below price and rising into a market that just lost the 10-EMA, 50-SMA, VWMA, and Bollinger mid. The macro headwind is not priced — the Fed is **re-hiking**, real yields are **2.64%**, and December hike odds are **76%**. And sentiment silence is not a bottom; it’s an absence of sponsorship.
+
+The bull case needs **BTC-USD** to reclaim **$82,544 → $84,840 → $87,363** before it even has a valid short-term reversal. The bear case just needs a failure at the same cluster or a break of **$79,145** to open **$77.5k → $74k**.
+
+That’s the asymmetry I care about.
+
+**FINAL TRANSACTION PROPOSAL: SELL / UNDERWEIGHT BTC-USD.**

@@ -1,11 +1,11 @@
 **Action**: Sell
 
-**Reasoning**: The plan is net Underweight and near-term evidence is decisively bearish: BTC-USD at $81,382 is below the 10EMA for eight sessions, below the VWMA ($83,032) and Bollinger mid ($83,408) for 10 of 11 sessions, momentum is decaying (MACD spread ~-96.7%, near a zero-line cross), and a rising real-yield backdrop (~2.73%, +104bp since April) is the wrong regime for a zero-yield long-duration asset. The bull's asymmetry collapsed under scrutiny — the $79,736 stop is only ~0.77 ATR (ATR 2.62%), inside the noise band, cutting the trade to ~1.9:1 rather than 3:1, so there is no case to add here. But with the 200SMA ($72,425) rising and the golden cross intact, this is a controlled trim into strength, not an outright short or full exit — retain a reduced core and let the triggers decide. Trim into the $82.3K-$83.4K resistance shelf rather than forcing sales at the $81K support; a daily close above $83,408 on 35B+ volume reverses to re-add, while a break below $79,736 (Oct 15 low) exits the remainder.
+**Reasoning**: The forward-looking evidence — a Fed that is re-hiking (76% odds of another hike, 96% no cuts in 2026), a 2.64% 10Y TIPS real yield up 91bp YoY (the worst mix for zero-cashflow duration), and a ~6:1 prediction-market downside skew (50% to $77.5k before Oct 31 vs 8% to $87.5k) — is bearish enough that holding full exposure understates risk, so the honest transaction is to trim, not to maintain. That said, a fresh short at the $80,790 low (lower Bollinger band, prior launch zone, volume 22% below mean) is poor execution per the plan, so I express the Underweight stance by reducing existing BTC-USD exposure on strength rather than pressing a short here. I'll lighten into the $81,800–$82,544 bounce cluster, keep any tactical short conditional on a daily close below $79,145.54 on volume above ~$27B, and treat the 200-SMA at $72,900.84 as the referee — its break converts this to outright exit, while a daily close above $84,840 voids the bearish stance and flips me back toward neutral.
 
-**Entry Price**: 83000.0
+**Entry Price**: 82200.0
 
-**Stop Loss**: 79736.0
+**Stop Loss**: 84840.0
 
-**Position Sizing**: Trim 25-40% of current BTC-USD position into the $82.3K-$83.4K shelf; retain a reduced core at ~1/2 to 2/3 of normal size; flatten any leverage. Full structural exit of remainder only on a break of the 200SMA ($72,425).
+**Position Sizing**: Trim 25–33% of existing BTC-USD exposure into the $81,800–$82,544 strength zone; keep the residual core modest with position risk capped near 1.5% of book (respecting the 2.6% ATR), no fresh longs, dry powder reserved for a confirmed $82.5k→$87.5k reclaim or a genuine real-yield reversal.
 
 FINAL TRANSACTION PROPOSAL: **SELL**

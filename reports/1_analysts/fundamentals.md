@@ -1,134 +1,144 @@
-# Fundamental Analysis Report — `BTC-USD` (Bitcoin USD)
+# Fundamental Analysis Report — `BTC-USD` (Bitcoin USD, CCC)
 
-**Analysis date:** 2026-10-17 | **Venue:** CCC | **Vendor snapshot:** 2026-10-18 09:05 UTC
-**Identity verification:** Confirmed as `Bitcoin USD` (Exchange: CCC). This is a **crypto asset**, not an operating company. No ticker substitution was made.
-
----
-
-## 1. Data Availability Audit (Critical Caveat)
-
-I queried the full fundamental data stack at both quarterly and annual frequency. Results:
-
-| Request | Ticker | Frequency | Result |
-|---|---|---|---|
-| `get_fundamentals` | `BTC-USD` | — | ✅ Partial (market data only) |
-| `get_balance_sheet` | `BTC-USD` | Quarterly | ❌ NO_DATA_AVAILABLE |
-| `get_balance_sheet` | `BTC-USD` | Annual | ❌ NO_DATA_AVAILABLE |
-| `get_income_statement` | `BTC-USD` | Quarterly | ❌ NO_DATA_AVAILABLE |
-| `get_income_statement` | `BTC-USD` | Annual | ❌ NO_DATA_AVAILABLE |
-| `get_cashflow` | `BTC-USD` | Quarterly | ❌ NO_DATA_AVAILABLE |
-| `get_cashflow` | `BTC-USD` | Annual | ❌ NO_DATA_AVAILABLE |
-
-**Interpretation:** This is the expected and correct outcome. `BTC-USD` is a decentralized bearer asset — there is no issuer, no board, no fiscal year, and therefore **no income statement, balance sheet, or cash flow statement to report**. The vendor's absence of these statements does not indicate a delisted or invalid symbol; the market data returned is live and internally consistent (market cap ≈ price × circulating supply, see §3).
-
-**No values have been estimated or fabricated.** Where I derive figures below, they are arithmetic on the returned data or explicitly labeled reference constants.
+**Analysis date:** 2026-10-24 | **Data retrieved:** 2026-10-25 (vendor snapshot timestamp) | **Ticker used in all calls:** `BTC-USD`
 
 ---
 
-## 2. Returned Fundamentals Data (verbatim)
+## 1. Executive summary & critical data caveat
 
-| Field | Value |
+`BTC-USD` is **Bitcoin, a decentralized crypto asset — not an operating company.** As anticipated, the standard corporate fundamental stack is **entirely unavailable** for this symbol. I queried both quarterly and annual frequencies across all three statement tools:
+
+| Tool | Frequency attempted | Result |
+|---|---|---|
+| `get_fundamentals` | — | ✅ Returned market snapshot (price/market-cap data only) |
+| `get_balance_sheet` | quarterly + annual | ❌ `NO_DATA_AVAILABLE` — "no balance sheet data" |
+| `get_income_statement` | quarterly + annual | ❌ `NO_DATA_AVAILABLE` — "no income statement data" |
+| `get_cashflow` | quarterly + annual | ❌ `NO_DATA_AVAILABLE` — "no cash flow data" |
+
+**This is the correct and expected outcome, not a data failure to work around.** Bitcoin has no revenue, earnings, EPS, book value, debt, cash flow, or shareholder equity. Any report presenting such line items for `BTC-USD` would be fabricated. Per the tool's instruction, I have **not estimated or invented statement values.**
+
+Accordingly, this report delivers (a) the full market-structure evidence the vendor *did* return, (b) arithmetic derivations from that data, (c) the protocol-level "fundamental" variables that actually drive Bitcoin, and (d) explicit guidance on what data must be substituted for a genuine fundamental view.
+
+---
+
+## 2. What the vendor actually returned (raw fundamentals)
+
+| Metric | Value |
 |---|---|
 | Name | Bitcoin USD |
-| Market Cap | **$1,628,705,783,808** (~$1.63T) |
-| 52-Week High | **$116,273.31** |
-| 52-Week Low | **$57,747.766** |
-| 50-Day Average | **$81,322.90** |
-| 200-Day Average | **$72,425.69** |
+| Exchange | CCC |
+| **Market Cap** | **$1,605,086,740,480** (≈ $1.605 trillion) |
+| 52-Week High | $116,273.31 |
+| 52-Week Low | $57,747.77 |
+| 50-Day Moving Average | $81,800.72 |
+| 200-Day Moving Average | $72,900.84 |
+
+No price, volume, supply, or on-chain fields were returned. **The vendor did not supply a spot price**, so I derive an implied spot below and flag it clearly as an *estimate*, not vendor data.
 
 ---
 
-## 3. Derived Price & Valuation Metrics
+## 3. Derived analytics (all arithmetic shown, no invented inputs)
 
-Using a circulating supply of ~19.98M BTC (post-April-2024 halving; external reference constant, ~95.1% of the 21M hard cap mined):
+**Implied spot price.** Market cap ÷ circulating supply. The vendor returned no supply figure; using Bitcoin's protocol-fixed issuance schedule (post-April-2024 halving; supply ≈19.6M–20.1M BTC in Oct 2026) gives:
 
-**Implied spot price = $1,628,705,783,808 ÷ 19,980,000 ≈ $81,517**
+- 1,605,086,740,480 ÷ 20.1M ≈ **$79,855**
+- 1,605,086,740,480 ÷ 19.6M ≈ **$81,893**
+- **Working estimate: ≈ $80,000–$81,000**
 
-| Derived Metric | Value | Read |
+*Consistency check:* this sits ~1–2% below the 50-day average of $81,800.72 — internally coherent, indicating the snapshot is **fresh, not stale**. (Treat the exact spot as ±$1,500 and verify against a live quote before execution.)
+
+**Position within the 52-week range**
+
+| Derivation | Calculation | Result |
 |---|---|---|
-| Implied spot price | ~$81,517 | Current mark |
-| vs. 52W High ($116,273.31) | **−29.9%** | Approaching bear-market drawdown territory |
-| vs. 52W Low ($57,747.77) | **+41.2%** | Recovered well off the cycle low |
-| vs. 50-day MA | **+0.24%** | Pinned *exactly* to the 50DMA — no momentum edge |
-| vs. 200-day MA | **+12.6%** | Structurally bullish |
-| Position within 52W range | **40.6%** | Lower half of the range |
-| 52W range width (high ÷ low) | **2.01×** | Extremely high realized volatility |
-| 50DMA vs 200DMA spread | **+12.3%** (50 > 200) | Golden-cross regime intact |
-| Market cap at 52W high | ~$2.32T | Peak valuation reached |
-| Market cap at 52W low | ~$1.15T | Trough valuation |
-| Market cap drawdown from peak | **≈ −$694B** | ~30% of peak value erased |
+| 52-week range width | (116,273.31 − 57,747.77) ÷ 57,747.77 | **+101.3%** (high is 2.01× the low) |
+| Position in range (at ~$80,400) | (80,400 − 57,747.77) ÷ 58,525.54 | **~38.7%** (lower-middle third) |
+| Drawdown from 52-week high | 80,400 ÷ 116,273.31 − 1 | **−30.9%** |
+| Premium to 52-week low | 80,400 ÷ 57,747.77 − 1 | **+39.2%** |
+| Distance to 50-DMA | 80,400 ÷ 81,800.72 − 1 | **−1.7%** (just below) |
+| Distance to 200-DMA | 80,400 ÷ 72,900.84 − 1 | **+10.3%** (above) |
+| 50-DMA vs 200-DMA spread | 81,800.72 ÷ 72,900.84 − 1 | **+12.2%** (bullish alignment) |
 
-**Key structural observation:** The 50DMA sits $8,897 (12.3%) above the 200DMA — a bullish trend skeleton — yet price has stalled to within 0.2% of the 50DMA. This is a classic **trend-intact / momentum-neutral** configuration: buyers defended the medium-term average, but the market has not been able to extend. The 50DMA is now effectively acting as the battleground line.
+**The structural read:** the 50-day average sits **12.2% above** the 200-day average — an intact intermediate-term uptrend — yet price is **below** the 50-day and **31% below** the 52-week high. That combination describes a **corrective consolidation inside a bull trend**, not a trend breakdown. Momentum has cooled; the primary structure has not broken.
 
----
+**Risk/reward framing (from ~$80,400)**
 
-## 4. What Would Constitute "Fundamentals" for This Asset — and Status
-
-For an operating company I would report revenue, margins, leverage, and cash conversion. For `BTC-USD`, the economically equivalent fundamental drivers are:
-
-| Fundamental Driver | Status | Notes |
+| Scenario | Level | Move |
 |---|---|---|
-| Income statement / revenue / earnings | **N/A** | No issuer, no earnings |
-| Balance sheet / cash flow | **N/A** | No corporate entity |
-| Supply schedule / issuance rate | Not in vendor feed | Protocol-level: 3.125 BTC/block post-halving ≈ ~450 BTC/day ≈ ~0.82% annual inflation |
-| Hard cap / scarcity | Not in vendor feed | 21,000,000 BTC immutable cap; ~95% mined |
-| Next halving | Not in vendor feed | ~2028 (4-year cadence from April 2024) |
-| Hashrate / network security | Not in vendor feed | — |
-| On-chain activity (active addresses, fees, MVRV) | Not in vendor feed | — |
-| Spot ETF flows / institutional balances | Not in vendor feed | — |
-| Realized volatility / funding rates / open interest | Not in vendor feed | — |
-| Regulatory/custody regime | Not in vendor feed | — |
+| Reclaim 50-DMA (first confirmation) | $81,800.72 | **+1.7%** |
+| Retest 52-week high | $116,273.31 | **+44.6%** |
+| Lose 200-DMA (trend invalidation) | $72,900.84 | **−9.3%** |
+| Retest 52-week low | $57,747.77 | **−28.2%** |
 
-The scarcity and issuance mechanics are the only true "fundamental" of `BTC-USD`, and they are protocol-determined rather than reported. Everything else that matters is flow- and sentiment-driven.
+A position risk-managed at the 200-DMA against a 52-week-high objective screens at roughly **4.8:1 reward-to-risk**. Note the gap between $81,800 and $116,273 is **devoid of reference levels in this dataset** (no intermediate MAs or prior pivots were returned) — expect low-friction, high-velocity movement through that zone in either direction.
+
+**Volatility implication.** A 2.01× high/low ratio over twelve months is an extreme realized-volatility regime. For equal portfolio risk contribution, a `BTC-USD` allocation should be sized at roughly **one-third to one-half** of an equivalent-volatility equity position.
 
 ---
 
-## 5. Actionable Insights for Traders
+## 4. The actual "fundamentals" of `BTC-USD` (protocol mechanics)
 
-**1. The 50DMA (~$81,323) is the single most important level to watch.** Price is sitting on it with only 0.24% of cushion. A clean daily close and hold above it keeps the uptrend constructive; a decisive loss opens a path toward the 200DMA at ~$72,426, which would imply roughly a further **−11%** and a market cap near $1.45T.
+Because corporate statements don't exist, Bitcoin's fundamental drivers are supply schedule, network security, and demand flows. The supply side is **protocol-fixed and verifiable**, not vendor data:
 
-**2. The trend regime is still bullish but decelerating.** 50DMA > 200DMA with a 12.3% spread means the golden-cross structure has not broken. Absent a break of the 200DMA, the correct structural read is *uptrend in consolidation*, not *bear market* — despite being 30% off the high.
+- **Issuance:** post-April-2024 halving, block subsidy = **3.125 BTC**, ~144 blocks/day → **~450 BTC/day**, **~164,000 BTC/year**.
+- **Inflation rate:** ~164k ÷ ~19.9M supply ≈ **0.8%/yr** — structurally below gold (~1.5–2%) and far below fiat expansion. This is Bitcoin's core scarcity thesis.
+- **Next halving:** ~April 2028 (subsidy → 1.5625 BTC), mechanically cutting new supply in half again.
+- **Hard cap:** 21,000,000 BTC; ~95% already mined. Supply is **perfectly inelastic to price** — the defining difference from every commodity, where higher prices elicit new production.
+- **No counterparty/issuer:** no management, no board, no earnings revisions, no credit risk, no dividend, no dilution of the traditional kind.
 
-**3. Range positioning at 40.6% argues against chasing strength.** Buying in the lower-middle of a 2× wide annual range with flat short-term momentum offers poor asymmetry. The higher-probability entries are (a) a confirmed reclaim/hold of the 50DMA with expanding volume, or (b) a flush into the $72–75K zone that holds the 200DMA.
-
-**4. Volatility is the dominant risk factor, not fundamentals.** A 2.01× high/low ratio within 12 months means position sizing — not thesis — is the primary determinant of outcome. Stops placed tighter than ~8–10% around current price are highly likely to be noise-stopped.
-
-**5. Reclaim of the 52W high (−29.9% away) would confirm a new leg; a break of $57,747 (−29.2% away) would confirm a full bear cycle.** Both boundaries are roughly equidistant, reinforcing a balanced risk/reward at current levels.
-
-**6. Fundamental due diligence is genuinely limited here.** Because the vendor provides no on-chain, flow, or network data for `BTC-USD`, a fundamentals-only mandate cannot generate a high-conviction directional call. Any strong conviction must come from a technical/flow overlay that is outside this toolset.
+**Implication for traders:** there is no "earnings catalyst." Bitcoin reprices on **liquidity, real yields, and flow** — spot ETF creations/redemptions, corporate treasury accumulation, exchange balances, and derivatives funding — none of which this toolset exposes.
 
 ---
 
-## 6. Assessment
+## 5. Explicit data gaps (do not infer these from this report)
 
-The available evidence is **neutral-to-constructive**: the long-term trend structure (price > 200DMA, 50DMA > 200DMA) remains intact and price is up 41% off the annual low, but the asset is 30% below its high, sitting flat on its 50-day average, and positioned in the lower 41% of a very wide 52-week range. With zero reported financial fundamentals by design, there is no valuation anchor to argue the asset is cheap or expensive.
+The following were **not** available and must be sourced before sizing a position:
 
-**Stance: HOLD** — maintain existing exposure, do not add aggressively at the 50DMA without confirmation, and use ~$72.4K (200DMA) as the structural invalidation level for the bullish trend thesis.
+1. Live spot price, volume, bid/ask, order-book depth, futures basis, funding rates, open interest.
+2. On-chain valuation: MVRV, realized cap, SOPR, net unrealized P/L, dormancy, long-term-holder supply, exchange netflows.
+3. Miner economics: hashrate, difficulty, hashprice, miner capitulation signals.
+4. Flow data: spot ETF net creations/redemptions, stablecoin supply growth, CME positioning.
+5. Macro: real yields (10Y TIPS), DXY, global M2, equity risk appetite.
+6. Regulatory/event calendar specific to the 2026-10-24 window.
+7. Whether the $116,273.31 52-week high is also an all-time high — **not determinable** from this dataset.
 
 ---
 
-## 7. Summary Table
+## 6. Actionable conclusions
 
-| Category | Metric | Value | Signal / Implication |
+1. **Regime classification: bullish structure, corrective phase.** 50-DMA > 200-DMA by 12.2% keeps the medium-term trend constructive; price under the 50-DMA and 31% off the high means near-term momentum is negative. **Do not chase; do not panic-sell.**
+2. **$81,800 is the pivot.** A daily close reclaiming the 50-DMA reopens the path toward the $116k high. Failure to reclaim keeps the market in "lower-middle of range" chop.
+3. **$72,900 (200-DMA) is the invalidation line.** A sustained break there flips the structural read to bearish and puts $57,748 (52-week low) in play — a further 21%. This is the single most important risk trigger.
+4. **Asymmetry favors patient accumulation.** ~4.8:1 reward-to-risk from ~$80.4k against a 200-DMA stop is attractive for swing positioning; scale entries in tranches rather than a single clip given the 101% annual range.
+5. **Volatility-adjust sizing** to ⅓–½ of an equity-equivalent risk budget.
+6. **Fundamental conviction is not establishable with this toolset.** This is a price-structure and positioning call, not a fundamental one. Any trader requiring an on-chain/flow-confirmed thesis must augment with the data in §5 before committing capital.
+
+---
+
+## 7. Key points summary
+
+| Category | Item | Value / Read | Evidence status |
 |---|---|---|---|
-| **Identity** | Ticker / Name / Venue | `BTC-USD` / Bitcoin USD / CCC | Crypto asset — no corporate issuer |
-| **Data Quality** | Income statement | ❌ Unavailable (Q & A) | Not applicable to an asset with no issuer |
-| | Balance sheet | ❌ Unavailable (Q & A) | Not applicable |
-| | Cash flow statement | ❌ Unavailable (Q & A) | Not applicable |
-| | Fundamentals (market data) | ✅ Available | Partial coverage only |
-| **Valuation** | Market Cap | $1,628,705,783,808 | ~$1.63T |
-| | Implied spot price (≈19.98M supply) | ~$81,517 | Mark |
-| | Market cap at 52W high | ~$2.32T | Peak cycle valuation |
-| | Market cap drawdown from peak | ≈ −$694B | ~30% of value erased |
-| **Range** | 52W High | $116,273.31 | −29.9% away |
-| | 52W Low | $57,747.77 | +41.2% above; −29.2% away |
-| | Position in 52W range | 40.6% | Lower half — poor chase setup |
-| | Range width (H/L) | 2.01× | Very high volatility |
-| **Trend** | 50-day MA | $81,322.90 | Price +0.24% above — battleground |
-| | 200-day MA | $72,425.69 | Price +12.6% above — structural support |
-| | 50DMA vs 200DMA | +12.3% (50 > 200) | Golden-cross regime intact |
-| **Protocol** | Hard cap / issuance | 21M cap; ~0.82% annual inflation | Only true fundamental; not vendor-sourced |
-| **Risk** | Primary risk | Volatility + data blind spots | Size positions, not theses |
-| **Decision** | Recommendation | **HOLD** | Neutral; add only on 50DMA reclaim or 200DMA flush |
+| Identity | Asset | Bitcoin USD (`BTC-USD`), crypto asset — **not a company** | Resolved identity |
+| Market cap | Total network value | **$1.605 trillion** | ✅ Vendor |
+| Price | Implied spot (derived) | ≈ **$80,000–$81,000** | ⚠️ Derived (cap ÷ est. supply) |
+| Range | 52-week high / low | $116,273.31 / $57,747.77 | ✅ Vendor |
+| Range | Width / high-to-low ratio | **+101.3% / 2.01×** | ✅ Derived |
+| Position | Spot within 52-wk range | **~38.7%** (lower-middle) | ✅ Derived |
+| Trend | 50-DMA / 200-DMA | $81,800.72 / $72,900.84 | ✅ Vendor |
+| Trend | 50-DMA vs 200-DMA | **+12.2% — uptrend intact** | ✅ Derived |
+| Trend | Spot vs 50-DMA / 200-DMA | **−1.7% / +10.3%** | ✅ Derived |
+| Drawdown | From 52-wk high / above low | **−30.9% / +39.2%** | ✅ Derived |
+| Levels | Support / Resistance | $81,800 pivot, $72,900 invalidation, $57,748 floor / $116,273 target | ✅ Derived |
+| Risk/Reward | To 52-wk high vs 200-DMA stop | **≈ 4.8 : 1** | ✅ Derived |
+| Supply | Issuance / inflation / cap | 3.125 BTC/block, ~450 BTC/day, ~0.8%/yr, 21M hard cap | Protocol mechanics (not vendor) |
+| Fundamentals | Balance sheet, income, cash flow | **UNAVAILABLE — no data at any frequency** | ❌ Tool-verified absence |
+| Fundamentals | On-chain, flows, funding, macro | **Not exposed by toolset — must be sourced externally** | ❌ Gap |
+| Volatility | Sizing guidance | ⅓–½ of equity-equivalent risk budget | Judgment |
+| Stance | Verdict | Constructive **HOLD**; accumulate in tranches on dips toward $72.9k–$76k; hard stop below 200-DMA | Synthesis |
+
+---
+
+**Bottom line:** `BTC-USD` cannot be analyzed fundamentally in the corporate sense — all three statement tools returned verified `NO_DATA_AVAILABLE` across quarterly and annual frequencies, and I have not fabricated financials. What the data supports is a clear structural read: an intact uptrend (50-DMA 12.2% above the 200-DMA) currently in a corrective pullback (31% off the 52-week high, just under the 50-DMA), offering favorable asymmetry while $72,900 holds.
 
 FINAL TRANSACTION PROPOSAL: **HOLD**
