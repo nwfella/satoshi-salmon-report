@@ -1,210 +1,170 @@
-# BTC-USD — Multi-Timeframe Technical Report
-**Analysis date:** 2026-10-24 (Saturday session) | **Verified close:** $80,790.84 | **Exchange:** CCC (spot)
+FINAL TRANSACTION PROPOSAL: **SELL**
 
-All price/indicator figures below are taken from the verified market snapshot for 2026-10-24, which is the source of truth. Where I derive a percentage or distance, the arithmetic is shown so it can be checked.
+# BTC-USD — Technical Deep-Dive (as of 2026-11-07)
 
----
+## 1. Bottom line
 
-## 1. Where price sits right now
+Bitcoin is trading at **75,747.58** (verified close 2026-11-07), which puts it **~39.3% below the 2025-10-06 closing peak of 124,752.53** and **12.5% below the 2026-09-21 close of 86,602.91**. The primary trend remains down (unbroken sequence of lower highs), the medium-term picture is a *compression* between a still-rising 200-day SMA and a just-rolled-over 50-day SMA, and the short-term picture deteriorated sharply after a **failed breakout on 2026-11-04** was fully reversed on 2026-11-05.
 
-| Field | Value |
-|---|---:|
-| Open | 81,074.19 |
-| High | 81,098.24 |
-| Low | **79,145.54** |
-| Close | **80,790.84** |
-| Volume | 21.27B |
-
-Today's candle is a bearish continuation bar: opened near the high, sold to 79,145.54, and closed 83% down the range. Two facts matter more than the candle itself:
-
-1. **The 2026-10-24 low of 79,145.54 is the lowest intraday print since 2026-09-18** (low 76,228.33). Every session from 2026-09-19 through 2026-10-23 printed a low above it.
-2. **80,790.84 is the lowest close of the last 30 sessions** (the prior 30-session closing low was 81,074.19 on 2026-10-23, and before that 81,311.89 on 2026-10-22).
-
-So price is at the bottom edge of a five-week distribution range, with the sequence of recent closes being literally monotonic down: 84,011.97 (10-21) → 81,311.89 (10-22) → 81,074.19 (10-23) → 80,790.84 (10-24), i.e. **−3.83% in three sessions**.
+Momentum is bearish but **not yet oversold** (RSI 38.11), and MACD is *re-accelerating* to the downside rather than bottoming. The only genuinely constructive evidence is micro-scale: price has spent two sessions undercutting the lower Bollinger Band intraday and closing back inside it, with a mild 6-session positive RSI divergence. That favours selling strength / holding a bearish bias rather than aggressively shorting into the band.
 
 ---
 
-## 2. 12-month context: a repaired bear market, not a resurgent bull market
+## 2. Verified indicator dashboard (2026-11-07)
 
-From the retrieved OHLCV (2025-10-24 → 2026-10-24):
+| Indicator | Value | Price vs. level | Read |
+|---|---:|---:|---|
+| Close | 75,747.58 | — | Lowest close since 2026-08-19 (69,266.19) outside the Nov 5–6 dip |
+| close_10_ema | 77,486.71 | −2.25% | Short-term trend down; 10 EMA falling 9 of last 10 sessions |
+| close_50_sma | 81,871.81 | −7.49% | Bearish; 50 SMA just ticked down from 81,992.18 (Nov 4) |
+| close_200_sma | 73,187.78 | +3.50% | Bullish cushion; 200 SMA still *rising* |
+| boll (20 SMA) | 79,330.38 | −4.52% | Bearish; mid-band sliding ~300/day |
+| boll_ub | 84,321.08 | −10.17% | Upper band collapsing from 87,359.96 (2026-10-08) |
+| boll_lb | 74,339.67 | +1.89% | Price in bottom ~14% of channel |
+| rsi | 38.11 | — | Weak, but 30 not reached; mild positive divergence |
+| macd | −1,486.63 | — | Below zero, most negative value in the sample |
+| macds | −1,159.96 | — | MACD below signal since 2026-10-23 |
+| macdh | −326.68 | — | Re-widening bearishly after Nov 4's −160.48 |
+| atr | 2,251.42 | 2.97% of spot | ~1.6% below the 2026-09-23 reading of 2,510.48 |
+| vwma | 78,282.65 | −3.24% | Volume-weighted cost basis sits *above* spot |
+| Volume | 9.36B | — | Lowest of the last 30 sessions |
 
-- **Cycle high in window:** 116,273.31 intraday on 2025-10-27.
-- **Cycle low:** 60,074.20 intraday on 2026-02-05, then a *lower low* of **57,747.77 on 2026-07-01**.
-- **Recovery high:** 87,363.76 intraday on 2026-09-21.
-
-Against those anchors:
-- Current 80,790.84 is **−30.5% below the 2025-10-27 high** and **−27.2% below the 2025-10-24 close of 111,033.92** (a negative 12-month return).
-- It is **+34.5% above the 2026-02-05 low** (60,074.20) and **+39.9% above the 2026-07-01 low** (57,747.77).
-- It is **−7.53% below the 2026-09-21 high** and **−16.6% below the 2026-01-14 close** (96,929.33).
-
-The structural read: the July low at 57,747.77 was a *lower* low versus February, yet it was followed by a +51.3% impulse to 87,363.76 — a higher high versus the May 2026 peak of 82,792.21 (2026-05-06). That is a legitimate intermediate-term bullish reversal. The current move is a **pullback within that recovery**, not (yet) a resumption of the 2025–2026 bear leg. But it is a deep pullback that has now given back roughly half of the July→September advance (retracement of 57,747.77→87,363.76 at 50% = 72,555.77; price at 80,790.84 has retraced ~22%).
-
----
-
-## 3. Indicator selection and why
-
-I selected **8 complementary indicators** — three trend layers, one momentum pair, one volatility envelope, one volatility-scalar, and one volume-integrated average. I deliberately avoided stacking oscillators (no StochRSI alongside RSI) and avoided selecting MACD's three components as three separate "indicators."
-
-| # | Indicator | Value 2026-10-24 | Why it earns a slot here |
-|---|---|---:|---|
-| 1 | **close_200_sma** | 72,900.84 | The only clean long-term trend arbiter. Price is +10.82% above it and the line is *rising* off its 2026-08-21 low of 68,973.59 — tells us whether this is a dip or a regime change. |
-| 2 | **close_50_sma** | 81,800.72 | Medium-term trend + the level price just lost (first close below it on 2026-10-22). Also quantifies how stretched the 50/200 spread has become (+12.2%). |
-| 3 | **close_10_ema** | 81,912.01 | Captures the speed of the short-term deterioration. Falling 3 straight sessions (82,645.11 → 82,402.71 → 82,161.16 → 81,912.01) and now above the 50 SMA — a short-term death cross is forming. |
-| 4 | **macd** (+ signal 107.67, hist −287.85) | −180.18 | The cleanest measure of *trend regime*. MACD crossed below zero on 2026-10-23 for the first time in the 60-session window and sits below its signal line. |
-| 5 | **rsi** | 44.21 | Momentum exhaustion gauge. Needed to test whether the selloff is becoming oversold (it is not) and to check for divergence. |
-| 6 | **boll_lb** (envelope: mid 82,544.00 / ub 85,320.06 / lb 79,767.95) | 79,767.95 | Defines a statistically-derived downside objective and tells us where price sits inside the envelope (%B ≈ 0.18). The band *width* collapse is the single most important volatility observation right now. |
-| 7 | **atr** | 2,112.38 (2.61% of spot) | Position sizing and stop placement. Critically, ATR is *not* expanding — it is near the low end of its 2-month range (2,043–2,511). |
-| 8 | **vwma** | 82,114.28 | Volume-weighted cost basis. Price is 1.61% *below* it, meaning recent turnover occurred at higher prices — sellers are holding the marginal advantage. Confirms the breakdown isn't purely a price artifact. |
+No conflicts were found between the OHLCV feed and the verification snapshot; both agree on the 2026-11-07 row (O 75,746.93 / H 76,138.68 / L 75,485.69 / C 75,747.58).
 
 ---
 
-## 4. Trend analysis: three layers disagreeing
+## 3. Why these eight indicators
 
-### Long-term (200 SMA) — intact bullish, but low conviction
-- Price 80,790.84 vs 200 SMA 72,900.84 → **+7,890.00, or +10.82%**.
-- The 200 SMA bottomed at **68,973.59 on 2026-08-21** and has risen every session since, to 72,900.84 — **+5.69%**. Its slope reaccelerated recently: 72,425.69 (10-17) → 72,900.84 (10-24) is +475.15 in five sessions, versus only +771.11 over the prior 90 days (72,129.73 on 2026-07-26 → 72,900.84). In other words, the *rate of change* of the long-term line is improving even as price falls. That is a genuinely constructive signal.
-- Price reclaimed the 200 SMA on **2026-08-19** (close 69,266.19 vs 200 SMA 68,995.07) and has not closed below it since.
-
-### Medium-term (50 SMA) — still rising, but the price/50SMA relationship just broke
-- The 50 SMA has risen from **63,510.94 (2026-08-15) to 81,800.72 — +28.8%** — and is still climbing about $22/day.
-- **However: 2026-10-22 was the first daily close below the 50 SMA within the entire 90-session retrieval window.** Close 81,311.89 vs 50 SMA 81,782.29. Price has stayed below for three sessions.
-- The 50/200 spread is **+12.2%** (50 SMA ÷ 200 SMA = 1.1221). That is a wide, mature cross spread — mechanically it means the medium-term average has a lot of air beneath it, and the 50 SMA's own slope will flatten quickly if price simply goes sideways here (it is lapping the August–September rally).
-
-### Short-term (10 EMA) — clearly bearish
-- The 10 EMA has rolled from **84,841.47 (2026-10-06) to 81,912.01** and is now *above* the 50 SMA (81,912.01 vs 81,800.72). With price 1.37% below both, the 10 EMA is on course to cross down through the 50 SMA within days — the classic short-term trend-change trigger.
-- The 10 EMA also crossed below the 20-period Bollinger mid (82,544.00), and price is 2.12% below that mid-line.
-
-**Synthesis:** the hierarchy is bullish long-term (price > rising 200 SMA), neutral-to-rolling-over medium-term (50 SMA rising but just lost), and bearish short-term (price < 10 EMA < losing momentum). This is the signature of a **failed breakout inside an uptrend** — the most ambiguous of all configurations, and one that argues for patience rather than aggression.
-
-### The golden cross
-The 50 SMA crossed **above** the 200 SMA on **2026-09-08** (50 SMA 69,958.49 vs 200 SMA 69,866.57; on 2026-09-07 the 50 SMA at 69,694.32 was still below the 200 SMA at 69,814.41). That cross is still valid — there is no death cross anywhere near, since the spread is +8,899.88.
+`close_10_ema` + `close_50_sma` + `close_200_sma` give three separated time horizons so I can distinguish "short-term noise" from "primary trend" from "structural floor" — critical here because they disagree. `macd`/`macds`/`macdh` are used as one momentum family (crossovers + rate-of-change of the gap). `rsi` adds a bounded oscillator that the MACD cannot provide. `boll`/`boll_ub`/`boll_lb` quantify the *compression* the moving averages hint at and locate price within the distribution. `atr` converts every level into a risk unit. `vwma` is the only close-weighted-by-volume measure, testing whether the decline is being *accepted* at these prices. I deliberately excluded a second oscillator (no stochrsi) to avoid duplicated signals.
 
 ---
 
-## 5. Momentum: a decisive regime shift on 2026-10-22/23
+## 4. Long-term structure: primary downtrend, but a higher-low shelf exists
 
-### MACD
-- MACD line: **−180.18** vs signal **107.67** → line is below signal, histogram **−287.85**.
-- The MACD line peaked at **2,070.54 on 2026-09-30** and has fallen essentially monotonically since: 1,994 (10-05) → 1,689 (10-07) → 1,134 (10-09) → 440 (10-14) → 44.28 (10-22) → **−69.35 (10-23)** → −180.18 (10-24).
-- **The zero-line break occurred on 2026-10-23** — the first negative MACD reading in the 60-session series.
-- The histogram has been negative since **2026-09-29** (+74.04 on 09-28 → −34.10 on 09-29), i.e. the MACD/signal bearish cross is now **three and a half weeks old**. It bottomed at −584.91 (10-12), narrowed to −126.82 (10-21), then **re-widened to −287.85 (10-24)**. That re-widening after a brief narrowing is important: the bounce attempt on 2026-10-21 failed to repair momentum. Downside acceleration, not deceleration, is the current reading.
+The sequence of closing highs is unambiguously descending:
 
-### RSI
-- **44.21**, down from 56.68 on 2026-10-21 and 68.51 on 2026-10-04. Below the 50 mid-line since 2026-10-22.
-- RSI is **not oversold**. There is no 30-line capitulation signal and no bullish divergence: on 2026-10-08 price closed 81,676.34 with RSI 46.86; today price is 1.08% *lower* (80,790.84) with RSI 2.65 points lower. Momentum is *confirming* the new price low, which means there is no technical brake on further downside yet.
-- One useful historical note (observed, not predictive): a **mild bearish RSI divergence** formed at the top — 2026-09-21 close 86,602.91 with RSI 73.85, versus 2026-10-04 close 86,480.30 with RSI 68.51 (lower RSI on marginally lower price). The subsequent 6.6% decline from 86,480.30 to 80,790.84 is consistent with that signal, but a single instance proves nothing about the next one.
+| Peak | Date | Close |
+|---|---|---:|
+| Cycle high | 2025-10-06 | 124,752.53 |
+| 2026 high | 2026-01-14 | 96,929.33 |
+| September high | 2026-09-21 | 86,602.91 |
+| October high | 2026-10-21 | 84,011.97 |
 
-**Momentum verdict: bearish and still deteriorating.** The one thing missing from a true momentum washout is an oversold RSI reading. Until RSI is in the mid-30s (or a bullish divergence appears), rallies have to be treated as counter-trend.
+The 2025-10-10 session (open 121,704.74, low 104,582.41, close 113,214.37 on **153.1B** volume, the largest in the dataset) marks the regime change from trend-up to trend-down.
 
----
+On the downside, the sequence is *not* cleanly bearish: capitulation low 62,353.54 (2026-02-05 intraday), then a *lower* low at 57,747.77 (2026-07-01 intraday), then a *higher* low at 64,111.07 (2026-08-19). Since July, BTC has been coiling in a contracting pattern — higher lows against lower highs — and the current price of 75,747.58 sits in the lower third of that coil, **~3.7% above the 2026-08-21 low of 73,011.41**, which is the hinge of the structure.
 
-## 6. Volatility: the most under-appreciated part of this setup
-
-### Bollinger envelope
-| Band | Value | Distance from close |
-|---|---:|---:|
-| Upper | 85,320.06 | +5.61% above |
-| Middle (20 SMA) | 82,544.00 | +2.12% above |
-| Lower | **79,767.95** | **−1.28% below** |
-
-- **%B = (80,790.84 − 79,767.95) / (85,320.06 − 79,767.95) = 1,022.89 / 5,552.11 ≈ 0.18.** Price is in the bottom 18% of the envelope — leaning on the lower band, but *at* the band rather than through it.
-- **Band width has collapsed:** 5,552.11 now = **6.73% of the mid-line**, versus (89,498.12 − 76,217.30) = 13,280.82 = **16.03% of the mid-line on 2026-10-04**. That is a **~58% contraction in under three weeks**.
-- Important nuance: much of that contraction is mechanical — the enormous 2026-09-21/22 impulse candles (80,867→87,363 intraday, close 86,602.91) have rolled out of the 20-day standard-deviation window. So this is a *statistical* squeeze rather than proof of a coiled spring.
-- **ATR, the honest test of realized volatility, disagrees with the "squeeze" narrative:** ATR is **2,112.38 (2.61% of spot)**, versus 2,169.74 on 2026-10-04 and 2,510.48 on 2026-09-23. Realized daily range has compressed only ~3% in three weeks and remains in the middle of its 2-month band (2,043–2,511). Translation: **the market has stopped trending, not stopped moving.**
-
-### What this means for risk
-With ATR at 2,112, a normal daily range is ±$2.1k, and a 2×ATR stop is **$4,224.77 = 5.23% of spot**. Any position taken at market has a genuine ~5% noise band. This argues for *smaller* size, not tighter stops.
+That matters: the August leg up (2026-08-19 close 69,266.19 → 2026-08-21 close 78,335.19, a two-day +13.1% move) is now almost entirely retraced. Price at 75,747.58 is *inside* the body of that 2026-08-21 breakout candle (open 73,031.09 / close 78,335.19). A break of that candle's base removes the last higher-low in the sequence.
 
 ---
 
-## 7. Volume and participation: distribution, but no capitulation
+## 5. Medium term: the 50/200 SMA configuration is still bullish — and that is the key tension
 
-- **VWMA (82,114.28)** sits 1,323.44 (1.61%) *above* the close. The volume-weighted average transacted price over the indicator window is above spot — buyers from the last several weeks are underwater, which creates overhead supply on any bounce.
-- **The decisive day was 2026-10-22:** −3.21% (84,011.97 → 81,311.89) on **33.45B** volume. Using the 30-session volume series from the retrieved data, the mean is approximately **27.4B**, so that was a roughly **+22% distribution day** — above-average volume on a sharp decline is a bearish tell.
-- **But the follow-through is thin:** 23.49B on 2026-10-23 and **21.27B today, ~22% below the 30-day mean.** The break to a new 5-week low is happening on *declining* volume. That is drift/absence-of-bids rather than forced liquidation, and it makes the downside look more like a slow bleed than a capitulation.
-- For scale: the 2026-02-05 low (60,074.20) printed **125.5B**, and 2025-11-21 printed **129.2B**. Today's volume is a sixth of those. **No climactic seller exhaustion has occurred.**
+This is the most misunderstood part of the current tape:
 
----
+- **50 SMA = 81,871.81**, **200 SMA = 73,187.78**. The 50 remains **8,684 points (11.9%) ABOVE** the 200. The golden-cross regime inherited from 2025 is **still intact**. A "death cross" narrative is premature and not supported by the data.
+- However, the **50 SMA has just turned down**: 81,992.18 (2026-11-04) → 81,974.88 (2026-11-06) → 81,871.81 (2026-11-07). It had risen almost monotonically from 74,531.87 (2026-09-23) as the Feb–Jun 2026 crash prints rolled out of the window.
+- Simultaneously the **200 SMA is rising** (+87 points over the nine sessions from 2026-10-29's 73,101.84 to 73,187.78), moving *up* toward price from below.
 
-## 8. Reference levels (drawn only from tool output, not assumed behaviour)
+So BTC is trapped in a **narrowing corridor**: it is being squeezed between a falling 50-day above and a rising 200-day below. The gap has compressed from 18,023 on 2026-09-23 (74,531.87 vs 70,758.85) to 8,684 today — a ~52% compression in six weeks. Compression of this kind is a regime that resolves directionally; it is *not* a trend signal by itself. What tips the odds is that price is sitting near the **bottom** of the corridor while short-term momentum points down — i.e., the pressure is on the 200-day, not the 50-day.
 
-**Overhead — now a supply cluster between 81.8k and 82.5k:**
-- 81,800.72 — 50 SMA (lost 2026-10-22)
-- 81,912.01 — 10 EMA
-- 82,114.28 — VWMA
-- 82,544.00 — Bollinger mid
-This tight four-level band is the nearest meaningful hurdle. A daily close above 82,544 would be the first objective evidence that the breakdown failed.
-
-**Further resistance:**
-- 84,011.97 (2026-10-21 close) / 84,840.05 (2026-10-21 high)
-- 86,480.30–86,766.15 (2026-10-04 close/high)
-- 87,363.76 — 2026-09-21 high (the structural ceiling)
-
-**Downside references:**
-- **79,767.95** — Bollinger lower band
-- **79,145.54** — 2026-10-24 low (the immediate line in the sand)
-- 77,830.29 / 76,909.35 — 2026-08-28 close / low
-- 76,470.64–74,944.59 — 2026-09-10/11 and 2026-09-15 lows (the September higher-low shelf)
-- **72,900.84** — 200 SMA (the bull/bear line)
-
-**Constructive observation:** the 79.1k–80.9k region is precisely where the September impulse originated — 2026-09-18 closed 80,901.46 and 2026-09-19 closed 81,233.68 before the vertical move to 86,602.91 by 2026-09-21. Price is retesting the base of that impulse. That is a reason for caution on fresh shorts, not a reason to buy blindly.
+**Practical implication:** 73,188 is the single most important number on the chart. It is the 200 SMA *and* it sits next to the 2026-08-20/21 watershed (73,032.76 close, 73,011.41 low). A weekly close below it would invalidate the entire post-July higher-low structure.
 
 ---
 
-## 9. Scenario map with explicit triggers
+## 6. Short term: a textbook failed breakout, and momentum is re-accelerating lower
 
-**Scenario A — Range resolution lower (near-term risk, ~45% implicit weight).**
-Trigger: a daily close below **79,145.54**. Confirmation: close below the Bollinger lower band 79,767.95 with volume >27B.
-Path: 77.8k → 76.5k–74.9k. Invalidation of the intermediate uptrend would only come at a close below 72,900.84 (200 SMA), which is 9.8% lower.
+The last five sessions contain the most actionable information in the dataset:
 
-**Scenario B — Base-building / chop (highest-probability path, ~35%).**
-Trigger: price holds 79,145.54 and oscillates in a 79.1k–84.8k box. Evidence for this: ATR flat, band width compressed, RSI mid-range at 44, and today's low-volume drift.
-Tactically this is a "do nothing at market" regime; the 81.8k–82.5k cluster is the pivot.
+| Date | Close | Change | Volume |
+|---|---:|---:|---:|
+| 2026-11-03 | 77,345.05 | — | 22.4B |
+| 2026-11-04 | 80,405.29 | **+3.96%** | 40.9B |
+| 2026-11-05 | 75,942.12 | **−5.55%** | **48.4B** |
+| 2026-11-06 | 75,746.93 | −0.26% | 29.3B |
+| 2026-11-07 | 75,747.58 | +0.00% | 9.4B |
 
-**Scenario C — Bear trap / reclaim (~20%).**
-Trigger: a daily close back above **82,544.00** (Bollinger mid) that also reclaims the VWMA at 82,114.28, ideally with RSI back above 50 and MACD histogram narrowing for 3+ sessions.
-Path: 84.8k → 86.5k → 87.4k retest. Only a close above 87,363.76 re-establishes the primary uptrend and opens the 2026-01-14 high of 97,860.60 as an objective.
+On **2026-11-04** price broke out of the 76,677–78,248 range with a 81,079.79 high on 40.9B and closed near the high at 80,405.29. On **2026-11-05** it opened there and closed at 75,942.12 near the low (75,114.29) on **48.4B** — roughly **1.9× the ~25–26B average volume of the prior 25 sessions**. That is a bearish engulfing / failed-breakout reversal, and the heavy volume indicates *acceptance* of lower prices rather than a liquidity vacuum.
 
----
+Since then the bounce attempts have died at successively lower levels: the 2026-11-06 high was 76,291.06 and the 2026-11-07 high 76,138.68, both below the 2026-10-30 to 2026-11-01 shelf of **77,198–78,248**. Note also the **2026-11-07 range is only 652.99 points** and volume at 9.36B is the lowest in 30 sessions — a thin, non-informative session. Do not read the flat close as stabilization.
 
-## 10. Position management
-
-- Because the trend layers conflict, **the correct action is no new exposure at these prices.** Spot longs should be held, not added to, unless Scenario C triggers.
-- If a tactical long is taken at the 79.1k–79.8k shelf: **stop below 78,850** (below the 10-24 low minus a small buffer), which is a ~1,900–2,000 point risk ≈ 0.9×ATR — acceptable only with **reduced size** (use 1.5% of ATR, not 2×, given the ATR is not expanding).
-- For existing longs from the August–September advance: **the structural stop is a weekly close below 72,900.84 (200 SMA)**. A tighter tactical stop under 79,145.54 is defensible only for leveraged positions.
-- For anyone short: 79.1k is the obvious level; given the light volume and the September-base overlap, taking partials into the 79.1k–79.8k band rather than pressing is the higher-expectancy management.
-- **Invalidation rule:** the bearish short-term read is void on a close above 82,544.00; the bullish long-term read is void on a close below 72,900.84.
+**MACD is the clearest bearish tell.** The MACD line peaked at +2,486.05 on 2026-09-24, crossed below zero on 2026-10-23 (−69.35), and has made a *new low* on the most recent session at **−1,486.63**. After the 2026-11-04 bounce narrowed the histogram to −160.48, it has re-widened to −264.40 → −319.03 → **−326.68**. Re-widening histogram after a failed bounce = downside momentum re-accelerating. There is **no bullish MACD crossover and no histogram divergence** anywhere in the last 45 sessions.
 
 ---
 
-## 11. Honest limitations
+## 7. Mean-reversion evidence is thin and unconfirmed
 
-- The toolset contains no on-chain, funding-rate, open-interest, ETF-flow, or macro-liquidity data. For BTC-USD those are frequently the marginal drivers, and none of the above captures them. This report is technical only.
-- Bollinger band-width contraction here is partly an artifact of the September impulse rolling out of the 20-day window; I have weighted ATR more heavily as the honest realized-volatility measure.
-- My statement that 2026-10-22 was the "first close below the 50 SMA" is bounded by the 90-session indicator window retrieved (starting 2026-07-26); a prior breach before that window cannot be excluded from this data.
+The bull case rests on three fragile observations:
+
+1. **Price in the bottom 14% of the Bollinger channel** (+1.89% above the 74,339.67 lower band).
+2. **Two consecutive intraday band undercuts that closed back inside:** 2026-11-05 low 75,114.29 vs lower band 75,407.24; 2026-11-06 low 74,795.11 vs lower band 74,815.71 (an undercut of ~21 points). In strong downtrends this pattern usually precedes continuation, not reversal — it is a *warning against chasing shorts*, not a buy signal.
+3. **A mild positive RSI divergence** over six sessions: 2026-10-29 close 77,775.11 → RSI 35.85; 2026-11-02 close 76,677.30 → RSI 35.00; 2026-11-07 close 75,747.58 → RSI 38.11. Lower prices, marginally higher RSI.
+
+Against that: RSI at **38.11** is nowhere near the 30 threshold, and the 2026-11-04 spike to 50.65 was rejected immediately (38.54 the next day). There is no divergence on MACD, no volume climax, and no reclaimed moving average. **The oversold case is not confirmed.**
 
 ---
 
-## 12. Summary table
+## 8. Volume structure: distribution, not accumulation
 
-| Dimension | Reading (2026-10-24) | Signal | Interpretation |
-|---|---|---|---|
-| Close | 80,790.84 | — | Lowest close in 30 sessions; 3-day drop −3.83% from 84,011.97 |
-| Session range | 79,145.54 – 81,098.24 | Bearish | Closed at 17% of range; new low since 2026-09-18 |
-| 200 SMA | 72,900.84 (+10.82% below price) | **Bullish (LT)** | Rising since 2026-08-21 low of 68,973.59; slope improving |
-| 50 SMA | 81,800.72 (price −1.23%) | **Bearish flip** | First close below it since at least 2026-07-26 (happened 2026-10-22) |
-| 10 EMA | 81,912.01 (price −1.37%) | Bearish | Above 50 SMA; downside cross imminent |
-| 50/200 spread | +12.2% | Stretched | Mature golden cross (2026-09-08); mean-reversion risk |
-| MACD / signal / hist | −180.18 / 107.67 / −287.85 | **Bearish** | Zero-line break 2026-10-23; hist re-widening after brief narrowing |
-| RSI | 44.21 | Weak-neutral | Not oversold; no bullish divergence; confirming the low |
-| Bollinger | mid 82,544.00 / ub 85,320.06 / lb 79,767.95 | Lower-half | %B ≈ 0.18; close is 1.28% above lower band |
-| Band width | 6.73% of mid (was 16.03% on 2026-10-04) | Compression | ~58% contraction, partly window artifact |
-| ATR | 2,112.38 (2.61%) | Stable | Flat vs 2,169.74 (2026-10-04); no expansion, no capitulation |
-| VWMA | 82,114.28 (price −1.61%) | Bearish | Overhead supply; blended holders underwater |
-| Volume | 21.27B vs ~27.4B 30-day mean | **Divergent** | Break lower on light volume; 10-22 was a 33.45B distribution day |
-| Key resistance cluster | 81,800.72 / 81,912.01 / 82,114.28 / 82,544.00 | Pivot zone | Daily close above 82,544 = breakdown failed |
-| Key support | 79,767.95 / 79,145.54 / 76,909–77,830 / 74,944.59 / 72,900.84 | Downside ladder | 200 SMA is the regime line |
+VWMA at **78,282.65** means the volume-weighted average transacted price of the last 20 sessions is **3.24% above spot**. Recent buyers are, on a volume-weighted basis, underwater — that is overhead supply, and it explains why 76,291 / 76,564 / 77,200 have capped every bounce. The VWMA has fallen in an almost unbroken line from 84,141.99 (2026-10-09) to 78,282.65, while price has fallen faster. Price persistently below a falling VWMA is a *distribution* signature, not an accumulation one.
 
-**Bottom line:** BTC-USD has broken short-term trend (below 10 EMA, 50 SMA, VWMA and Bollinger mid) on a fresh 5-week low, with MACD through zero and RSI falling — but it has done so on *shrinking* volume, with ATR flat, while sitting 10.8% above a *rising* 200 SMA and directly on the base of the September impulse. The evidence does not support either adding longs into weakness or initiating new shorts into a low-volume retest of a prior launch zone. The correct posture is to hold existing exposure, shrink risk, and let the 79,145.54 / 82,544.00 bracket decide the next leg.
+---
 
-FINAL TRANSACTION PROPOSAL: **HOLD**
+## 9. Actionable plan
+
+**Bias: bearish / sell strength.** The trend, momentum, and volume evidence all align; only the lower band and the 200 SMA argue for caution.
+
+**Level map (all from verified data):**
+
+| Role | Zone | Source |
+|---|---|---|
+| Resistance 3 | 81,080 – 81,872 | 2026-11-04 high 81,079.79; 50 SMA 81,871.81 |
+| Resistance 2 | 79,330 – 80,405 | 20-day SMA 79,330.38; 2026-11-04 close 80,405.29 |
+| Resistance 1 | 76,291 – 78,283 | 2026-11-06 high 76,291.06; Oct 30–Nov 1 shelf 77,198–78,248; VWMA 78,282.65 |
+| Spot | **75,747.58** | 2026-11-07 close |
+| Support 1 | 74,340 – 75,114 | Lower Bollinger 74,339.67; Nov 5/6 lows 75,114.29 / 74,795.11 |
+| Support 2 | **73,031 – 73,188** | 200 SMA 73,187.78; 2026-08-21 low/open 73,011.41 / 73,031.09 |
+| Support 3 | 70,556 – 69,282 | 2026-02-06 close 70,555.39; 2026-02-07 close 69,281.97 |
+
+**Execution options**
+
+1. **Preferred — sell the rally.** Scale into shorts at 77,200 / 78,280 / 79,330, i.e., into the 10 EMA (77,486.71), the VWMA (78,282.65) and the 20 SMA (79,330.38). This avoids entering at the lower band. Stop on a daily close above **80,410** (reclaim of the 2026-11-04 close) — about 1.0–1.4 ATR from the first tranche.
+2. **Alternative — momentum continuation.** Short on a decisive daily close below **74,795** (2026-11-06 low) that also clears the lower band. First target 73,031–73,188. Stop at 76,300 (0.7 ATR above entry) or above 77,200 for a swing version.
+3. **Do not buy here.** A long at 75,747 has ~1,400 points of room to the lower band and ~5,900 points of overhead supply to the 50 SMA. Reward/risk is inferior to simply waiting.
+
+**Invalidation of the bearish bias (three conditions, need at least two):**
+- Daily close above **78,283** (VWMA) and above the 10 EMA;
+- MACD histogram positive for two consecutive sessions (currently −326.68);
+- RSI back above **45–50** with price holding above 76,291.
+
+**Risk management**
+- ATR 2,251.42 = **2.97% of spot**. 1.5 ATR = ~3,377 (4.5%).
+- Position size = (equity × risk %) ÷ (1.5 × ATR). At 1% equity risk that implies a notional of roughly **22% of equity** per unit of risk — i.e., scale, don't lump.
+- Expect volatility compression to precede the corridor resolution: ATR has already fallen from 2,510.48 (2026-09-23) to 2,251.42. A quiet weekend tape (9.36B volume) often precedes an expansion session — do not leave stops tight into that.
+
+**What would flip the medium-term picture:** A weekly close above the 2026-10-21 high of 84,840.05 (the most recent lower high) would break the descending-highs sequence and put the 50 SMA back in play as support. Until then, every rally is a counter-trend rally inside a primary downtrend.
+
+---
+
+## 10. Key points summary
+
+| Dimension | Evidence | Signal |
+|---|---|---|
+| Primary trend | Lower highs 124,752.53 (2025-10-06) → 96,929.33 → 86,602.91 → 84,011.97 | **Bearish** |
+| Drawdown | 75,747.58 = −39.3% vs 2025-10-06 close; −40.2% vs 126,198.07 intraday ATH | Bearish |
+| 2026 performance | −14.6% vs 2026-01-01 close 88,731.98 | Bearish |
+| Short-term trend | Price below 10 EMA (77,486.71) and 20 SMA (79,330.38) | **Bearish** |
+| Medium-term trend | Price −7.49% vs 50 SMA (81,871.81), which just rolled over | **Bearish** |
+| Long-term trend | Price +3.50% above rising 200 SMA (73,187.78) | Bullish (cushion) |
+| Golden/death cross | 50 SMA 81,871.81 still 11.9% above 200 SMA, but gap halved in 6 weeks | Neutral / deteriorating |
+| MACD | −1,486.63 vs signal −1,159.96; histogram re-widening to −326.68 | **Bearish** |
+| RSI | 38.11; 2026-11-04 spike to 50.65 rejected; mild 6-day divergence | Bearish, unconfirmed divergence |
+| Bollinger | Price in bottom 14% of a 9,981-wide channel; 2 intraday band undercuts closed back inside | Bearish with short-term squeeze risk |
+| Volume | 2026-11-05 −5.55% on 48.4B (~1.9× avg) after failed +3.96% breakout | **Distribution** |
+| VWMA | 78,282.65, i.e., 3.24% above spot = overhead supply | Bearish |
+| Volatility | ATR 2,251.42 (2.97%); 1.5 ATR stop = 4.5% | Size down |
+| Decision | Trend + momentum + volume aligned lower; no confirmed oversold reversal | **SELL** (sell rallies 77.2–79.3k; add below 74.8k) |
+| Hard invalidation | Daily close > 80,410 and MACD histogram > 0 | Cover / stand aside |
+| Structural break | Weekly close < 73,031 would target 70,556 → 69,282 | Accelerated downside |
+
+*This is a technical assessment derived solely from the supplied OHLCV and indicator data; it is not investment advice and does not account for fundamentals, positioning, or macro catalysts.*
